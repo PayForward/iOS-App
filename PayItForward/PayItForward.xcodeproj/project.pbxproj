@@ -17,6 +17,7 @@
 		288767951EA41DC60052A76D /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288767941EA41DC60052A76D /* MessagesViewController.swift */; };
 		288767971EA41DCF0052A76D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288767961EA41DCF0052A76D /* AccountViewController.swift */; };
 		2887679B1EA425630052A76D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2887679A1EA425630052A76D /* PostTableViewCell.swift */; };
+		B206025D1EA4365000D94A43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B206025C1EA4365000D94A43 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		288767941EA41DC60052A76D /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		288767961EA41DCF0052A76D /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		2887679A1EA425630052A76D /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		B206025C1EA4365000D94A43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				288767821EA41A880052A76D /* Assets.xcassets */,
 				288767841EA41A880052A76D /* LaunchScreen.storyboard */,
 				288767871EA41A880052A76D /* Info.plist */,
+				B206025C1EA4365000D94A43 /* GoogleService-Info.plist */,
 			);
 			path = PayItForward;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				288767861EA41A880052A76D /* LaunchScreen.storyboard in Resources */,
 				288767831EA41A880052A76D /* Assets.xcassets in Resources */,
 				288767811EA41A880052A76D /* Main.storyboard in Resources */,
+				B206025D1EA4365000D94A43 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +347,7 @@
 				2887678C1EA41A880052A76D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
