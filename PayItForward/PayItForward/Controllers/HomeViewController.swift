@@ -89,7 +89,17 @@ extension HomeViewController: UITableViewDataSource {
         if let postCell = cell as? PostTableViewCell {
             let post = posts[indexPath.row]
             postCell.titleLabel.text = post.title
-            postCell.detailLabel.text = post.description
+            var timeSincePosting = Int((Date.timeIntervalSinceReferenceDate - post.timeSinceEpochInSeconds) / 60) // defaults to minutes
+            
+            if timeSincePosting > 60 {
+                timeSincePosting /= 60 // gives it to you in hours
+                
+                if timeSincePosting > 24 {
+                    timeSincePosting /= 24 // gives it to you in days
+                }
+            }
+            
+            postCell.detailLabel.text = "Posted \(timeSincePosting) ago by \(post.userFirstName)"
             
             if post.price == 0 {
                 postCell.priceLabel.text = "Free"
@@ -104,7 +114,7 @@ extension HomeViewController: UITableViewDataSource {
 //                postCell.priceView.backgroundColor = 
             }
             
-            postCell.userImage.image = post.image
+            postCell.userImage.image = post.userProfileImage
         }
         
         return cell

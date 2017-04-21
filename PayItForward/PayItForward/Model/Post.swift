@@ -16,11 +16,28 @@ enum PostType {
 
 class Post {
     var title: String!
-    var description: String!
-    var image: UIImage!
+    var userFirstName: String!
+    var userProfileImage: UIImage!
     var price: Double!
+    var timeSinceEpochInSeconds: Double! 
     var specifiedTime: String?
     var type: PostType!
-    var postTime: String!
-    var location: [String: Any]!
+    
+    var exactDate: Date {
+        return Date(timeIntervalSince1970: self.timeSinceEpochInSeconds)
+    }
+    
+    lazy var details = PostDetails()
+    
+}
+
+class PostDetails {
+    
+    var description: String!
+    var location: (String, Bool)!
+    
+    // in case public = false, measured in meters
+    var obfuscateFactor = Double(arc4random_uniform(50))
+    var radius: Double?
+    
 }
