@@ -18,11 +18,13 @@
 		288767971EA41DCF0052A76D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288767961EA41DCF0052A76D /* AccountViewController.swift */; };
 		2887679B1EA425630052A76D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2887679A1EA425630052A76D /* PostTableViewCell.swift */; };
 		2890B0281EAAAB7D00886C82 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890B0271EAAAB7D00886C82 /* User.swift */; };
+		41CB3972FEE6964D53190C2F /* Pods_PayItForward.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02342E188617EE6198B8EDBB /* Pods_PayItForward.framework */; };
 		B206025D1EA4365000D94A43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B206025C1EA4365000D94A43 /* GoogleService-Info.plist */; };
 		B252670A1EAA9CF700E0C02E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25267091EAA9CF700E0C02E /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02342E188617EE6198B8EDBB /* Pods_PayItForward.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayItForward.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		288767781EA41A880052A76D /* PayItForward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayItForward.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2887677B1EA41A880052A76D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		288767801EA41A880052A76D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,8 +38,10 @@
 		288767961EA41DCF0052A76D /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		2887679A1EA425630052A76D /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		2890B0271EAAAB7D00886C82 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6F222FE0A63DED231C716579 /* Pods-PayItForward.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayItForward.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PayItForward/Pods-PayItForward.debug.xcconfig"; sourceTree = "<group>"; };
 		B206025C1EA4365000D94A43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B25267091EAA9CF700E0C02E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D392D23A4CC15AC1BEDEE71E /* Pods-PayItForward.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayItForward.release.xcconfig"; path = "Pods/Target Support Files/Pods-PayItForward/Pods-PayItForward.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41CB3972FEE6964D53190C2F /* Pods_PayItForward.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,8 @@
 			children = (
 				2887677A1EA41A880052A76D /* PayItForward */,
 				288767791EA41A880052A76D /* Products */,
+				7BE28688684CF6923B11B573 /* Pods */,
+				CC4430780605D0D7CB5B3517 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +110,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		7BE28688684CF6923B11B573 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F222FE0A63DED231C716579 /* Pods-PayItForward.debug.xcconfig */,
+				D392D23A4CC15AC1BEDEE71E /* Pods-PayItForward.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B25267081EAA9CE400E0C02E /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +128,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CC4430780605D0D7CB5B3517 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02342E188617EE6198B8EDBB /* Pods_PayItForward.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2887678A1EA41A880052A76D /* Build configuration list for PBXNativeTarget "PayItForward" */;
 			buildPhases = (
+				062113835A30E7B48DBEF168 /* [CP] Check Pods Manifest.lock */,
 				288767741EA41A870052A76D /* Sources */,
 				288767751EA41A870052A76D /* Frameworks */,
 				288767761EA41A870052A76D /* Resources */,
+				D527E1AC62BDF89729620864 /* [CP] Embed Pods Frameworks */,
+				24DE0D1817315391C8AD5804 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,6 +206,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		062113835A30E7B48DBEF168 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		24DE0D1817315391C8AD5804 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PayItForward/Pods-PayItForward-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D527E1AC62BDF89729620864 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PayItForward/Pods-PayItForward-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		288767741EA41A870052A76D /* Sources */ = {
@@ -314,6 +389,7 @@
 		};
 		2887678B1EA41A880052A76D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F222FE0A63DED231C716579 /* Pods-PayItForward.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PayItForward/Info.plist;
@@ -326,6 +402,7 @@
 		};
 		2887678C1EA41A880052A76D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D392D23A4CC15AC1BEDEE71E /* Pods-PayItForward.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PayItForward/Info.plist;
