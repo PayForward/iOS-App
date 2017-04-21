@@ -18,6 +18,7 @@
 		288767971EA41DCF0052A76D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288767961EA41DCF0052A76D /* AccountViewController.swift */; };
 		2887679B1EA425630052A76D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2887679A1EA425630052A76D /* PostTableViewCell.swift */; };
 		B206025D1EA4365000D94A43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B206025C1EA4365000D94A43 /* GoogleService-Info.plist */; };
+		B252670A1EAA9CF700E0C02E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25267091EAA9CF700E0C02E /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		288767961EA41DCF0052A76D /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		2887679A1EA425630052A76D /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		B206025C1EA4365000D94A43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B25267091EAA9CF700E0C02E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,8 @@
 		2887677A1EA41A880052A76D /* PayItForward */ = {
 			isa = PBXGroup;
 			children = (
+				B25267081EAA9CE400E0C02E /* Model */,
 				288767991EA424FC0052A76D /* Views */,
-				288767981EA41E0E0052A76D /* Model */,
 				2887678D1EA41D8B0052A76D /* Controllers */,
 				2887677B1EA41A880052A76D /* AppDelegate.swift */,
 				2887677F1EA41A880052A76D /* Main.storyboard */,
@@ -91,19 +93,20 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		288767981EA41E0E0052A76D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		288767991EA424FC0052A76D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				2887679A1EA425630052A76D /* PostTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B25267081EAA9CE400E0C02E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B25267091EAA9CF700E0C02E /* Post.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +185,7 @@
 				2887679B1EA425630052A76D /* PostTableViewCell.swift in Sources */,
 				288767951EA41DC60052A76D /* MessagesViewController.swift in Sources */,
 				288767931EA41DB20052A76D /* PostViewController.swift in Sources */,
+				B252670A1EAA9CF700E0C02E /* Post.swift in Sources */,
 				288767971EA41DCF0052A76D /* AccountViewController.swift in Sources */,
 				2887677C1EA41A880052A76D /* AppDelegate.swift in Sources */,
 				288767911EA41DA90052A76D /* CommunitiesViewController.swift in Sources */,

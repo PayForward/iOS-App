@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import Firebase
 
 class HomeViewController: UIViewController, UITextFieldDelegate {
     
@@ -15,6 +16,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var searchField: UITextField!
     @IBOutlet weak var postTableView: UITableView!
     
+    var posts = [Post]()
     
     @IBAction func launchCamera(_ sender: Any) {
     }
@@ -69,3 +71,48 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
     */
 
 }
+
+extension HomeViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return posts.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "post", for: indexPath)
+        
+        if let postCell = cell as? PostTableViewCell {
+            let post = posts[indexPath.row]
+            postCell.titleLabel.text = post.title
+            postCell.detailLabel.text = post.description
+            
+            if post.price == 0 {
+                postCell.priceLabel.text = "Free"
+//                postCell.priceView.backgroundColor = 
+            } else if post.type == .request {
+                postCell.priceLabel.text = "Redeem"
+                postCell.price.text = String(post.price)
+//                postCell.priceView.backgroundColor = 
+            } else {
+                postCell.priceLabel.text = "Offer"
+                postCell.price.text = String(post.price)
+//                postCell.priceView.backgroundColor = 
+            }
+            
+            postCell.userImage.image = post.image
+        }
+        
+        return cell
+    }
+}
+
+extension HomeViewController: UITableViewDelegate {}
+
+
+
+
+
+
