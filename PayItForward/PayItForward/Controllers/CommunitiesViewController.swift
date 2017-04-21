@@ -9,11 +9,19 @@
 import UIKit
 
 class CommunitiesViewController: UIViewController {
+    
+    // - MARK: Connectors
+    
+    @IBOutlet weak var searchField: UITextField!
+    @IBOutlet weak var tableView: UITableView!
+    
+    @IBAction func createCommunity(_ sender: Any) {
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     override func viewWillDisappear(_ animated: Bool) {

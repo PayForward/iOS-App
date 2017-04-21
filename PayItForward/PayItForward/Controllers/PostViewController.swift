@@ -9,11 +9,21 @@
 import UIKit
 
 class PostViewController: UIViewController {
+    
+    // - MARK: Connectors
+    
+    @IBOutlet weak var offerImage: UIImageView!
+    @IBAction func createOfferPost(_ sender: Any) {
+    }
 
+    @IBOutlet weak var requestImage: UIImageView!
+    @IBAction func createRequestPost(_ sender: Any) {
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
