@@ -89,10 +89,10 @@
 		2887677A1EA41A880052A76D /* PayItForward */ = {
 			isa = PBXGroup;
 			children = (
+				2887677B1EA41A880052A76D /* AppDelegate.swift */,
 				B25267081EAA9CE400E0C02E /* Model */,
 				288767991EA424FC0052A76D /* Views */,
 				2887678D1EA41D8B0052A76D /* Controllers */,
-				2887677B1EA41A880052A76D /* AppDelegate.swift */,
 				2887677F1EA41A880052A76D /* Main.storyboard */,
 				288767821EA41A880052A76D /* Assets.xcassets */,
 				288767841EA41A880052A76D /* LaunchScreen.storyboard */,
