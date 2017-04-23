@@ -1,5 +1,5 @@
 //
-//  IntroPageViewController.swift
+//  PageContainerViewController.swift
 //  PayItForward
 //
 //  Created by Pankaj Khillon on 4/21/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IntroPageViewController: UIPageViewController {
+class PageContainerViewController: UIPageViewController {
     
     var pageViewControllers: [UIViewController]!
 
@@ -47,7 +47,7 @@ class IntroPageViewController: UIPageViewController {
 
 }
 
-extension IntroPageViewController: UIPageViewControllerDataSource {
+extension PageContainerViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
         guard let viewControllerIndex = pageViewControllers.index(of: viewController) else {
