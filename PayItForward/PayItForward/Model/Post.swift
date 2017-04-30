@@ -22,6 +22,8 @@ class Post {
     var timeSinceEpochInSeconds: Double! 
     var specifiedTime: String?
     var type: PostType!
+    var category: String!
+    var subCategories: [String]!
     
     var exactDate: Date {
         return Date(timeIntervalSince1970: self.timeSinceEpochInSeconds)
