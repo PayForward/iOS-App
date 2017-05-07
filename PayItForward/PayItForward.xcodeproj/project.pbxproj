@@ -23,7 +23,6 @@
 		2890B02E1EAABAEF00886C82 /* SecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890B02D1EAABAEF00886C82 /* SecondPageViewController.swift */; };
 		2890B0301EAABAF900886C82 /* ThirdPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890B02F1EAABAF900886C82 /* ThirdPageViewController.swift */; };
 		2890B0321EAAC43700886C82 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890B0311EAAC43700886C82 /* IntroViewController.swift */; };
-		2890B0341EAAC7AA00886C82 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890B0331EAAC7AA00886C82 /* SignInViewController.swift */; };
 		41CB3972FEE6964D53190C2F /* Pods_PayItForward.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02342E188617EE6198B8EDBB /* Pods_PayItForward.framework */; };
 		B206025D1EA4365000D94A43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B206025C1EA4365000D94A43 /* GoogleService-Info.plist */; };
 		B252670A1EAA9CF700E0C02E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25267091EAA9CF700E0C02E /* Post.swift */; };
@@ -49,7 +48,6 @@
 		2890B02D1EAABAEF00886C82 /* SecondPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPageViewController.swift; sourceTree = "<group>"; };
 		2890B02F1EAABAF900886C82 /* ThirdPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdPageViewController.swift; sourceTree = "<group>"; };
 		2890B0311EAAC43700886C82 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
-		2890B0331EAAC7AA00886C82 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		6F222FE0A63DED231C716579 /* Pods-PayItForward.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayItForward.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PayItForward/Pods-PayItForward.debug.xcconfig"; sourceTree = "<group>"; };
 		B206025C1EA4365000D94A43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B25267091EAA9CF700E0C02E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -105,6 +103,7 @@
 		2887678D1EA41D8B0052A76D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				28BC54E41EBFE50F00A7E16E /* Sign_Up_Flow */,
 				2887678E1EA41D9C0052A76D /* HomeViewController.swift */,
 				288767901EA41DA90052A76D /* CommunitiesViewController.swift */,
 				288767921EA41DB20052A76D /* PostViewController.swift */,
@@ -115,7 +114,6 @@
 				2890B02D1EAABAEF00886C82 /* SecondPageViewController.swift */,
 				2890B02F1EAABAF900886C82 /* ThirdPageViewController.swift */,
 				2890B0311EAAC43700886C82 /* IntroViewController.swift */,
-				2890B0331EAAC7AA00886C82 /* SignInViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -126,6 +124,13 @@
 				2887679A1EA425630052A76D /* PostTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		28BC54E41EBFE50F00A7E16E /* Sign_Up_Flow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sign_Up_Flow;
 			sourceTree = "<group>";
 		};
 		7BE28688684CF6923B11B573 /* Pods */ = {
@@ -286,7 +291,6 @@
 				288767931EA41DB20052A76D /* PostViewController.swift in Sources */,
 				B252670A1EAA9CF700E0C02E /* Post.swift in Sources */,
 				288767971EA41DCF0052A76D /* AccountViewController.swift in Sources */,
-				2890B0341EAAC7AA00886C82 /* SignInViewController.swift in Sources */,
 				2890B0281EAAAB7D00886C82 /* User.swift in Sources */,
 				2890B0321EAAC43700886C82 /* IntroViewController.swift in Sources */,
 				2887677C1EA41A880052A76D /* AppDelegate.swift in Sources */,
