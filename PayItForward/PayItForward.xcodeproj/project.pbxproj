@@ -23,6 +23,7 @@
 		2890B02E1EAABAEF00886C82 /* SecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890B02D1EAABAEF00886C82 /* SecondPageViewController.swift */; };
 		2890B0301EAABAF900886C82 /* ThirdPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890B02F1EAABAF900886C82 /* ThirdPageViewController.swift */; };
 		2890B0321EAAC43700886C82 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890B0311EAAC43700886C82 /* IntroViewController.swift */; };
+		28BC54E81EBFF6FD00A7E16E /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BC54E71EBFF6FD00A7E16E /* CustomColors.swift */; };
 		41CB3972FEE6964D53190C2F /* Pods_PayItForward.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02342E188617EE6198B8EDBB /* Pods_PayItForward.framework */; };
 		B206025D1EA4365000D94A43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B206025C1EA4365000D94A43 /* GoogleService-Info.plist */; };
 		B252670A1EAA9CF700E0C02E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25267091EAA9CF700E0C02E /* Post.swift */; };
@@ -50,6 +51,7 @@
 		2890B02D1EAABAEF00886C82 /* SecondPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPageViewController.swift; sourceTree = "<group>"; };
 		2890B02F1EAABAF900886C82 /* ThirdPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdPageViewController.swift; sourceTree = "<group>"; };
 		2890B0311EAAC43700886C82 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		28BC54E71EBFF6FD00A7E16E /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		6F222FE0A63DED231C716579 /* Pods-PayItForward.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayItForward.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PayItForward/Pods-PayItForward.debug.xcconfig"; sourceTree = "<group>"; };
 		B206025C1EA4365000D94A43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B25267091EAA9CF700E0C02E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				2887679A1EA425630052A76D /* PostTableViewCell.swift */,
+				28BC54E71EBFF6FD00A7E16E /* CustomColors.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				288767931EA41DB20052A76D /* PostViewController.swift in Sources */,
 				B252670A1EAA9CF700E0C02E /* Post.swift in Sources */,
 				288767971EA41DCF0052A76D /* AccountViewController.swift in Sources */,
+				28BC54E81EBFF6FD00A7E16E /* CustomColors.swift in Sources */,
 				2890B0281EAAAB7D00886C82 /* User.swift in Sources */,
 				2890B0321EAAC43700886C82 /* IntroViewController.swift in Sources */,
 				2887677C1EA41A880052A76D /* AppDelegate.swift in Sources */,

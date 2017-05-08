@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -501,28 +503,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RGb-tI-qpO">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RGb-tI-qpO">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="552"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="j7I-2N-ijG" kind="embed" id="aeX-u6-AG9"/>
                                 </connections>
                             </containerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOz-ie-5UV">
-                                <rect key="frame" x="16" y="572" width="150" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOz-ie-5UV">
+                                <rect key="frame" x="209" y="572" width="150" height="75"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <segue destination="2bL-yN-qsQ" kind="presentation" id="hoY-bw-dnT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYK-bS-LZp">
-                                <rect key="frame" x="209" y="572" width="150" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYK-bS-LZp">
+                                <rect key="frame" x="16" y="572" width="150" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="hY9-G2-w3H"/>
+                                    <constraint firstAttribute="width" constant="150" id="zI3-Oc-Bdl"/>
+                                </constraints>
                                 <state key="normal" title="Sign In"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RGb-tI-qpO" secondAttribute="trailing" id="5RI-PP-QZC"/>
+                            <constraint firstItem="sOz-ie-5UV" firstAttribute="trailing" secondItem="0GP-ec-sLA" secondAttribute="trailingMargin" id="CCD-gn-eh0"/>
+                            <constraint firstItem="sOz-ie-5UV" firstAttribute="leading" secondItem="cYK-bS-LZp" secondAttribute="trailing" constant="43" id="HpL-pC-I6m"/>
+                            <constraint firstItem="cYK-bS-LZp" firstAttribute="top" secondItem="RGb-tI-qpO" secondAttribute="bottom" constant="20" id="LsM-Rl-rim"/>
+                            <constraint firstItem="cYK-bS-LZp" firstAttribute="leading" secondItem="0GP-ec-sLA" secondAttribute="leadingMargin" id="TqN-79-Wpk"/>
+                            <constraint firstItem="cYK-bS-LZp" firstAttribute="top" secondItem="sOz-ie-5UV" secondAttribute="top" id="b21-Ua-K1m"/>
+                            <constraint firstItem="RGb-tI-qpO" firstAttribute="top" secondItem="0GP-ec-sLA" secondAttribute="top" id="cga-ym-Kuf"/>
+                            <constraint firstItem="sOz-ie-5UV" firstAttribute="baseline" secondItem="cYK-bS-LZp" secondAttribute="firstBaseline" id="dmB-WD-AIp"/>
+                            <constraint firstItem="RGb-tI-qpO" firstAttribute="leading" secondItem="0GP-ec-sLA" secondAttribute="leading" id="ii0-YA-M4j"/>
+                            <constraint firstAttribute="bottom" secondItem="cYK-bS-LZp" secondAttribute="bottom" constant="20" symbolic="YES" id="irY-77-yJ5"/>
+                            <constraint firstItem="cYK-bS-LZp" firstAttribute="baseline" secondItem="sOz-ie-5UV" secondAttribute="firstBaseline" id="zcT-ER-4KS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hAd-g8-zD3"/>
                 </viewController>
@@ -637,7 +653,7 @@
         <!--Page Container View Controller-->
         <scene sceneID="x0b-xi-uGR">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="j7I-2N-ijG" customClass="PageContainerViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="j7I-2N-ijG" customClass="PageContainerViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WP1-Bv-Ot5"/>
                         <viewControllerLayoutGuide type="bottom" id="CIy-mj-DGV"/>
@@ -695,6 +711,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Earn discounts at local businesses by helping members of your community.">
                                         <attributes>
+                                            <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="28" name="AvenirNext-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -764,6 +781,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Enjoy meals, services, classes, and more without spending a single dollar.">
                                         <attributes>
+                                            <color key="NSColor" red="0.32937228679656982" green="0.32943451404571533" blue="0.32936835289001465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="28" name="AvenirNext-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -826,14 +844,16 @@
                                     <constraint firstItem="p7C-Om-MdM" firstAttribute="centerX" secondItem="Ych-l5-g9c" secondAttribute="centerX" id="pFR-7J-Ww0"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRM-86-wNB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRM-86-wNB">
                                 <rect key="frame" x="31" y="336" width="312" height="196"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="196" id="2YH-CD-a5y"/>
+                                    <constraint firstAttribute="width" constant="312" id="4vc-mO-qpA"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Find hundreds of new ways to connect with the people around you every single day.">
                                         <attributes>
+                                            <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="28" name="AvenirNext-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="10" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -846,6 +866,7 @@
                         <constraints>
                             <constraint firstItem="Ych-l5-g9c" firstAttribute="leading" secondItem="Z6h-iX-x6T" secondAttribute="leading" id="6ki-Mz-K0r"/>
                             <constraint firstItem="Ych-l5-g9c" firstAttribute="trailing" secondItem="8aA-FJ-UPL" secondAttribute="trailing" id="PcG-nB-zOh"/>
+                            <constraint firstItem="fRM-86-wNB" firstAttribute="centerX" secondItem="Z6h-iX-x6T" secondAttribute="centerX" id="SzF-hf-vfF"/>
                             <constraint firstItem="fRM-86-wNB" firstAttribute="top" secondItem="8aA-FJ-UPL" secondAttribute="bottom" constant="78" id="We0-n9-F48"/>
                             <constraint firstItem="8aA-FJ-UPL" firstAttribute="centerX" secondItem="fRM-86-wNB" secondAttribute="centerX" id="Yg4-db-on3"/>
                             <constraint firstItem="Ych-l5-g9c" firstAttribute="top" secondItem="Z6h-iX-x6T" secondAttribute="top" id="ZHC-Yn-6NO"/>
