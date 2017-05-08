@@ -27,6 +27,7 @@
 		B206025D1EA4365000D94A43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B206025C1EA4365000D94A43 /* GoogleService-Info.plist */; };
 		B252670A1EAA9CF700E0C02E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25267091EAA9CF700E0C02E /* Post.swift */; };
 		B26AB5281EBFE7E4009949E7 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26AB5261EBFE7E4009949E7 /* Onboarding.storyboard */; };
+		B26AB52A1EBFE8F2009949E7 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AB5291EBFE8F2009949E7 /* AddressViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		B206025C1EA4365000D94A43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B25267091EAA9CF700E0C02E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B26AB5271EBFE7E4009949E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
+		B26AB5291EBFE8F2009949E7 /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddressViewController.swift; path = PayItForward/Controllers/AddressViewController.swift; sourceTree = SOURCE_ROOT; };
 		D392D23A4CC15AC1BEDEE71E /* Pods-PayItForward.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayItForward.release.xcconfig"; path = "Pods/Target Support Files/Pods-PayItForward/Pods-PayItForward.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +134,7 @@
 		28BC54E41EBFE50F00A7E16E /* Sign_Up_Flow */ = {
 			isa = PBXGroup;
 			children = (
+				B26AB5291EBFE8F2009949E7 /* AddressViewController.swift */,
 			);
 			path = Sign_Up_Flow;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				TargetAttributes = {
 					288767771EA41A870052A76D = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 349CBR8K37;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -290,6 +294,7 @@
 				2887679B1EA425630052A76D /* PostTableViewCell.swift in Sources */,
 				288767951EA41DC60052A76D /* MessagesViewController.swift in Sources */,
 				2890B02C1EAABAE600886C82 /* FirstPageViewController.swift in Sources */,
+				B26AB52A1EBFE8F2009949E7 /* AddressViewController.swift in Sources */,
 				2890B02A1EAABAB700886C82 /* PageContainerViewController.swift in Sources */,
 				2890B0301EAABAF900886C82 /* ThirdPageViewController.swift in Sources */,
 				288767931EA41DB20052A76D /* PostViewController.swift in Sources */,
@@ -432,6 +437,7 @@
 			baseConfigurationReference = 6F222FE0A63DED231C716579 /* Pods-PayItForward.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 349CBR8K37;
 				INFOPLIST_FILE = PayItForward/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.payitforward.PayItForward;
@@ -445,6 +451,7 @@
 			baseConfigurationReference = D392D23A4CC15AC1BEDEE71E /* Pods-PayItForward.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 349CBR8K37;
 				INFOPLIST_FILE = PayItForward/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.payitforward.PayItForward;
