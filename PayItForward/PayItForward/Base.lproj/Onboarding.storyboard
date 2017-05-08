@@ -13,7 +13,7 @@
         <scene sceneID="w11-2n-WZ5">
             <objects>
                 <navigationController storyboardIdentifier="navigationController" id="Tct-zq-tgc" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Mdj-Mk-Vtm">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mdj-Mk-Vtm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -30,15 +30,7 @@
             </objects>
             <point key="canvasLocation" x="-1001" y="-217"/>
         </scene>
-        <!--introVC-->
-        <scene sceneID="tGw-7y-xnz">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="introVC" id="1gw-7h-ycM" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TBs-Du-jwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-763" y="292"/>
-        </scene>
-        <!--Payforward-->
+        <!--Address View Controller-->
         <scene sceneID="kJ4-3w-tsP">
             <objects>
                 <viewController storyboardIdentifier="addressVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iIC-GT-qfv" customClass="AddressViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,26 +45,62 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPM-Zu-6fe">
                                 <rect key="frame" x="286" y="580" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="next:" destination="iIC-GT-qfv" eventType="touchUpInside" id="6kE-Qm-WdU"/>
                                 </connections>
                             </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8ah-iW-bXa">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="8ah-iW-bXa">
                                 <rect key="frame" x="16" y="72" width="343" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </progressView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   Enter Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o3r-I3-fyf">
+                                <rect key="frame" x="16" y="170" width="343" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85882352941176465" green="0.92941176470588238" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGi-Jq-RKE">
+                                <rect key="frame" x="16" y="244" width="343" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="   Use Current Location">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="useCurrentLocation:" destination="iIC-GT-qfv" eventType="touchUpInside" id="ll5-sV-ifz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where's Home?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7E0-NR-PsI">
+                                <rect key="frame" x="76" y="97" width="223" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96078431372549022" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Payforward" id="vuC-4H-HXM">
+                    <navigationItem key="navigationItem" id="vuC-4H-HXM">
+                        <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="erJ-ht-2gw">
                             <connections>
                                 <segue destination="j2U-gI-bMP" kind="unwind" unwindAction="backToIntroWithSegue:" id="87l-B7-z0h"/>
                             </connections>
                         </barButtonItem>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oi6-gk-OdA">
+                            <rect key="frame" x="112.5" y="7" width="150" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="PayForward"/>
+                        </button>
                     </navigationItem>
                     <connections>
+                        <outlet property="addressField" destination="o3r-I3-fyf" id="LT3-ZZ-fCw"/>
                         <segue destination="j9Q-qV-xdn" kind="show" identifier="next" id="5gW-aW-jrJ"/>
                     </connections>
                 </viewController>
