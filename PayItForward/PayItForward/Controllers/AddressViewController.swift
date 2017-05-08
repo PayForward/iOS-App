@@ -1,28 +1,14 @@
 //
-//  IntroViewController.swift
+//  AddressViewController.swift
 //  PayItForward
 //
-//  Created by Pankaj Khillon on 4/21/17.
+//  Created by Jonathan Abercrombie on 5/7/17.
 //  Copyright © 2017 PayItFoward. All rights reserved.
 //
 
 import UIKit
 
-class IntroViewController: UIViewController {
-    
-    @IBAction func backToIntro(segue: UIStoryboardSegue) {}
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-    }
+class AddressViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +21,9 @@ class IntroViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func next(_ sender: UIButton) {
+        performSegue(withIdentifier: "next", sender: nil)
+    }
 
     /*
     // MARK: - Navigation

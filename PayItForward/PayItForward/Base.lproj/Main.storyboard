@@ -481,10 +481,10 @@
             </objects>
             <point key="canvasLocation" x="-612" y="49"/>
         </scene>
-        <!--Onboarding-->
+        <!--navigationController-->
         <scene sceneID="ZwP-1c-XWj">
             <objects>
-                <viewControllerPlaceholder storyboardName="Onboarding" id="2bL-yN-qsQ" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Onboarding" referencedIdentifier="navigationController" id="2bL-yN-qsQ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E5M-o7-F5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-879" y="-3182"/>
@@ -492,7 +492,7 @@
         <!--Intro View Controller-->
         <scene sceneID="nzy-R4-oDA">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="K6M-oX-uop" customClass="IntroViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="introVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K6M-oX-uop" customClass="IntroViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L9b-7g-lqx"/>
                         <viewControllerLayoutGuide type="bottom" id="gUy-Gb-hGT"/>

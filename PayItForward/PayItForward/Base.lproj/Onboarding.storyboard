@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Tct-zq-tgc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,39 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="w11-2n-WZ5">
+            <objects>
+                <navigationController storyboardIdentifier="navigationController" id="Tct-zq-tgc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Mdj-Mk-Vtm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.24313725490196078" green="0.61960784313725492" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iIC-GT-qfv" kind="relationship" relationship="rootViewController" id="dib-Z9-lOn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RJd-F9-WDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1001" y="-217"/>
+        </scene>
+        <!--introVC-->
+        <scene sceneID="tGw-7y-xnz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="introVC" id="1gw-7h-ycM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TBs-Du-jwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-763" y="292"/>
+        </scene>
+        <!--Payforward-->
         <scene sceneID="kJ4-3w-tsP">
             <objects>
-                <viewController id="iIC-GT-qfv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addressVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iIC-GT-qfv" customClass="AddressViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wd7-6Y-D0b"/>
                         <viewControllerLayoutGuide type="bottom" id="ykH-KP-xYn"/>
@@ -20,12 +49,55 @@
                     <view key="view" contentMode="scaleToFill" id="872-qx-02p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPM-Zu-6fe">
+                                <rect key="frame" x="286" y="580" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="next:" destination="iIC-GT-qfv" eventType="touchUpInside" id="6kE-Qm-WdU"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8ah-iW-bXa">
+                                <rect key="frame" x="16" y="72" width="343" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Payforward" id="vuC-4H-HXM">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="erJ-ht-2gw">
+                            <connections>
+                                <segue destination="j2U-gI-bMP" kind="unwind" unwindAction="backToIntroWithSegue:" id="87l-B7-z0h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="j9Q-qV-xdn" kind="show" identifier="next" id="5gW-aW-jrJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XMn-mc-sQ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="j2U-gI-bMP" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-154.40000000000001" y="-217.24137931034485"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cLp-Am-Awc">
+            <objects>
+                <viewController id="j9Q-qV-xdn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1j7-e3-f7L"/>
+                        <viewControllerLayoutGuide type="bottom" id="15k-1M-tE2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mpT-Zn-snv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XMn-mc-sQ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oEb-ce-s1W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-79" y="-170"/>
+            <point key="canvasLocation" x="639" y="-213"/>
         </scene>
     </scenes>
 </document>
