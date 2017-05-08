@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         // set default custom color values for commonly used UI elements
-        UILabel.appearance().tintColor = .text
-        UIView.appearance().backgroundColor = .backgroundColor
-        UIButton.appearance().backgroundColor = .main
+//        UILabel.appearance().tintColor = .text
+//        UIView.appearance().backgroundColor = .backgroundColor
+//        UIButton.appearance().backgroundColor = .main
         
         return true
     }

@@ -26,11 +26,16 @@
 		28BC54E81EBFF6FD00A7E16E /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BC54E71EBFF6FD00A7E16E /* CustomColors.swift */; };
 		41CB3972FEE6964D53190C2F /* Pods_PayItForward.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02342E188617EE6198B8EDBB /* Pods_PayItForward.framework */; };
 		B206025D1EA4365000D94A43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B206025C1EA4365000D94A43 /* GoogleService-Info.plist */; };
+		B23C44141EC004D700950957 /* VerifyNewMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C44131EC004D700950957 /* VerifyNewMemberViewController.swift */; };
+		B23C44161EC006A200950957 /* VerificationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C44151EC006A200950957 /* VerificationCodeViewController.swift */; };
+		B23C44181EC006F200950957 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C44171EC006F200950957 /* NameViewController.swift */; };
+		B23C441A1EC007A800950957 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C44191EC007A800950957 /* AboutViewController.swift */; };
 		B252670A1EAA9CF700E0C02E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25267091EAA9CF700E0C02E /* Post.swift */; };
 		B26AB5281EBFE7E4009949E7 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26AB5261EBFE7E4009949E7 /* Onboarding.storyboard */; };
 		B26AB52A1EBFE8F2009949E7 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AB5291EBFE8F2009949E7 /* AddressViewController.swift */; };
 		B26AB52C1EBFF84A009949E7 /* ChooseCommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AB52B1EBFF84A009949E7 /* ChooseCommunityViewController.swift */; };
 		B2952AA01EBFFF4900F060C1 /* TermsOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2952A9F1EBFFF4900F060C1 /* TermsOfServiceViewController.swift */; };
+		B2952AA21EC0031F00F060C1 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2952AA11EC0031F00F060C1 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,11 +61,16 @@
 		28BC54E71EBFF6FD00A7E16E /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		6F222FE0A63DED231C716579 /* Pods-PayItForward.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayItForward.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PayItForward/Pods-PayItForward.debug.xcconfig"; sourceTree = "<group>"; };
 		B206025C1EA4365000D94A43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B23C44131EC004D700950957 /* VerifyNewMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerifyNewMemberViewController.swift; path = PayItForward/Controllers/VerifyNewMemberViewController.swift; sourceTree = SOURCE_ROOT; };
+		B23C44151EC006A200950957 /* VerificationCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerificationCodeViewController.swift; path = PayItForward/Controllers/VerificationCodeViewController.swift; sourceTree = SOURCE_ROOT; };
+		B23C44171EC006F200950957 /* NameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameViewController.swift; path = PayItForward/Controllers/NameViewController.swift; sourceTree = SOURCE_ROOT; };
+		B23C44191EC007A800950957 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = PayItForward/Controllers/AboutViewController.swift; sourceTree = SOURCE_ROOT; };
 		B25267091EAA9CF700E0C02E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B26AB5271EBFE7E4009949E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
 		B26AB5291EBFE8F2009949E7 /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddressViewController.swift; path = PayItForward/Controllers/AddressViewController.swift; sourceTree = SOURCE_ROOT; };
 		B26AB52B1EBFF84A009949E7 /* ChooseCommunityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseCommunityViewController.swift; path = PayItForward/Controllers/ChooseCommunityViewController.swift; sourceTree = SOURCE_ROOT; };
 		B2952A9F1EBFFF4900F060C1 /* TermsOfServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TermsOfServiceViewController.swift; path = PayItForward/Controllers/TermsOfServiceViewController.swift; sourceTree = SOURCE_ROOT; };
+		B2952AA11EC0031F00F060C1 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateAccountViewController.swift; path = PayItForward/Controllers/CreateAccountViewController.swift; sourceTree = SOURCE_ROOT; };
 		D392D23A4CC15AC1BEDEE71E /* Pods-PayItForward.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayItForward.release.xcconfig"; path = "Pods/Target Support Files/Pods-PayItForward/Pods-PayItForward.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,9 +151,14 @@
 		28BC54E41EBFE50F00A7E16E /* Sign_Up_Flow */ = {
 			isa = PBXGroup;
 			children = (
-				B26AB52B1EBFF84A009949E7 /* ChooseCommunityViewController.swift */,
-				B2952A9F1EBFFF4900F060C1 /* TermsOfServiceViewController.swift */,
+				B23C44191EC007A800950957 /* AboutViewController.swift */,
 				B26AB5291EBFE8F2009949E7 /* AddressViewController.swift */,
+				B26AB52B1EBFF84A009949E7 /* ChooseCommunityViewController.swift */,
+				B2952AA11EC0031F00F060C1 /* CreateAccountViewController.swift */,
+				B23C44171EC006F200950957 /* NameViewController.swift */,
+				B23C44131EC004D700950957 /* VerifyNewMemberViewController.swift */,
+				B23C44151EC006A200950957 /* VerificationCodeViewController.swift */,
+				B2952A9F1EBFFF4900F060C1 /* TermsOfServiceViewController.swift */,
 			);
 			path = Sign_Up_Flow;
 			sourceTree = "<group>";
@@ -300,24 +315,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B23C44141EC004D700950957 /* VerifyNewMemberViewController.swift in Sources */,
 				2887679B1EA425630052A76D /* PostTableViewCell.swift in Sources */,
 				288767951EA41DC60052A76D /* MessagesViewController.swift in Sources */,
 				2890B02C1EAABAE600886C82 /* FirstPageViewController.swift in Sources */,
 				B26AB52A1EBFE8F2009949E7 /* AddressViewController.swift in Sources */,
 				2890B02A1EAABAB700886C82 /* PageContainerViewController.swift in Sources */,
+				B23C44161EC006A200950957 /* VerificationCodeViewController.swift in Sources */,
 				2890B0301EAABAF900886C82 /* ThirdPageViewController.swift in Sources */,
 				288767931EA41DB20052A76D /* PostViewController.swift in Sources */,
 				B252670A1EAA9CF700E0C02E /* Post.swift in Sources */,
 				288767971EA41DCF0052A76D /* AccountViewController.swift in Sources */,
 				28BC54E81EBFF6FD00A7E16E /* CustomColors.swift in Sources */,
 				2890B0281EAAAB7D00886C82 /* User.swift in Sources */,
+				B2952AA21EC0031F00F060C1 /* CreateAccountViewController.swift in Sources */,
 				2890B0321EAAC43700886C82 /* IntroViewController.swift in Sources */,
 				B2952AA01EBFFF4900F060C1 /* TermsOfServiceViewController.swift in Sources */,
 				B26AB52C1EBFF84A009949E7 /* ChooseCommunityViewController.swift in Sources */,
+				B23C44181EC006F200950957 /* NameViewController.swift in Sources */,
 				2887677C1EA41A880052A76D /* AppDelegate.swift in Sources */,
 				2890B02E1EAABAEF00886C82 /* SecondPageViewController.swift in Sources */,
 				288767911EA41DA90052A76D /* CommunitiesViewController.swift in Sources */,
 				2887678F1EA41D9C0052A76D /* HomeViewController.swift in Sources */,
+				B23C441A1EC007A800950957 /* AboutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
