@@ -470,6 +470,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.24313725489999999" green="0.61960784310000006" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="YoW-yM-NrK" kind="relationship" relationship="viewControllers" id="MR4-FU-klA"/>
@@ -511,18 +512,26 @@
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOz-ie-5UV">
                                 <rect key="frame" x="209" y="572" width="150" height="75"/>
-                                <state key="normal" title="Sign Up"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.61960784310000006" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="2bL-yN-qsQ" kind="presentation" id="hoY-bw-dnT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYK-bS-LZp">
                                 <rect key="frame" x="16" y="572" width="150" height="75"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="hY9-G2-w3H"/>
                                     <constraint firstAttribute="width" constant="150" id="zI3-Oc-Bdl"/>
                                 </constraints>
-                                <state key="normal" title="Sign In"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <color key="tintColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="0.24313725490196078" green="0.61960784313725492" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -550,7 +559,9 @@
         <scene sceneID="Q9w-kn-pzf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YoW-yM-NrK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="n0G-fZ-sWI"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="HomeInactive" id="n0G-fZ-sWI">
+                        <inset key="imageInsets" minX="45" minY="45" maxX="45" maxY="45"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8po-zH-Y3W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -886,6 +897,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HomeInactive" width="208" height="208"/>
         <image name="Intro1Hero" width="2000" height="1500"/>
         <image name="Intro2Hero" width="2016" height="1512"/>
         <image name="Intro3Hero" width="2464" height="1632"/>
