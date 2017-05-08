@@ -10,15 +10,16 @@ import UIKit
 
 class AddressViewController: UIViewController {
 
+    @IBOutlet weak var addressField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // TODO: add shadows
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func useCurrentLocation(_ sender: UIButton) {
+        
     }
     
     @IBAction func next(_ sender: UIButton) {
@@ -34,5 +35,10 @@ class AddressViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
 
 }

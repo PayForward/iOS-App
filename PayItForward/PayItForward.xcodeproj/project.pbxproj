@@ -29,6 +29,7 @@
 		B252670A1EAA9CF700E0C02E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25267091EAA9CF700E0C02E /* Post.swift */; };
 		B26AB5281EBFE7E4009949E7 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26AB5261EBFE7E4009949E7 /* Onboarding.storyboard */; };
 		B26AB52A1EBFE8F2009949E7 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AB5291EBFE8F2009949E7 /* AddressViewController.swift */; };
+		B26AB52C1EBFF84A009949E7 /* ChooseCommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AB52B1EBFF84A009949E7 /* ChooseCommunityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		B25267091EAA9CF700E0C02E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B26AB5271EBFE7E4009949E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
 		B26AB5291EBFE8F2009949E7 /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddressViewController.swift; path = PayItForward/Controllers/AddressViewController.swift; sourceTree = SOURCE_ROOT; };
+		B26AB52B1EBFF84A009949E7 /* ChooseCommunityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseCommunityViewController.swift; path = PayItForward/Controllers/ChooseCommunityViewController.swift; sourceTree = SOURCE_ROOT; };
 		D392D23A4CC15AC1BEDEE71E /* Pods-PayItForward.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayItForward.release.xcconfig"; path = "Pods/Target Support Files/Pods-PayItForward/Pods-PayItForward.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 		28BC54E41EBFE50F00A7E16E /* Sign_Up_Flow */ = {
 			isa = PBXGroup;
 			children = (
+				B26AB52B1EBFF84A009949E7 /* ChooseCommunityViewController.swift */,
 				B26AB5291EBFE8F2009949E7 /* AddressViewController.swift */,
 			);
 			path = Sign_Up_Flow;
@@ -306,6 +309,7 @@
 				28BC54E81EBFF6FD00A7E16E /* CustomColors.swift in Sources */,
 				2890B0281EAAAB7D00886C82 /* User.swift in Sources */,
 				2890B0321EAAC43700886C82 /* IntroViewController.swift in Sources */,
+				B26AB52C1EBFF84A009949E7 /* ChooseCommunityViewController.swift in Sources */,
 				2887677C1EA41A880052A76D /* AppDelegate.swift in Sources */,
 				2890B02E1EAABAEF00886C82 /* SecondPageViewController.swift in Sources */,
 				288767911EA41DA90052A76D /* CommunitiesViewController.swift in Sources */,
