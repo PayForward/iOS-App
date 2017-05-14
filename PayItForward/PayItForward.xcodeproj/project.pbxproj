@@ -15,7 +15,6 @@
 		288767911EA41DA90052A76D /* CommunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288767901EA41DA90052A76D /* CommunitiesViewController.swift */; };
 		288767931EA41DB20052A76D /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288767921EA41DB20052A76D /* PostViewController.swift */; };
 		288767951EA41DC60052A76D /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288767941EA41DC60052A76D /* MessagesViewController.swift */; };
-		288767971EA41DCF0052A76D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288767961EA41DCF0052A76D /* AccountViewController.swift */; };
 		2887679B1EA425630052A76D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2887679A1EA425630052A76D /* PostTableViewCell.swift */; };
 		2890B0281EAAAB7D00886C82 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890B0271EAAAB7D00886C82 /* User.swift */; };
 		2890B02A1EAABAB700886C82 /* PageContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890B0291EAABAB700886C82 /* PageContainerViewController.swift */; };
@@ -32,6 +31,7 @@
 		B23C44181EC006F200950957 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C44171EC006F200950957 /* NameViewController.swift */; };
 		B23C441A1EC007A800950957 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C44191EC007A800950957 /* AboutViewController.swift */; };
 		B252670A1EAA9CF700E0C02E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25267091EAA9CF700E0C02E /* Post.swift */; };
+		B25B16011EC8E83D006AFC1A /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B16001EC8E83D006AFC1A /* AccountTableViewController.swift */; };
 		B26AB5281EBFE7E4009949E7 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26AB5261EBFE7E4009949E7 /* Onboarding.storyboard */; };
 		B26AB52A1EBFE8F2009949E7 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AB5291EBFE8F2009949E7 /* AddressViewController.swift */; };
 		B26AB52C1EBFF84A009949E7 /* ChooseCommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AB52B1EBFF84A009949E7 /* ChooseCommunityViewController.swift */; };
@@ -51,7 +51,6 @@
 		288767901EA41DA90052A76D /* CommunitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunitiesViewController.swift; sourceTree = "<group>"; };
 		288767921EA41DB20052A76D /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		288767941EA41DC60052A76D /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
-		288767961EA41DCF0052A76D /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		2887679A1EA425630052A76D /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		2890B0271EAAAB7D00886C82 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2890B0291EAABAB700886C82 /* PageContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContainerViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		B23C44171EC006F200950957 /* NameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameViewController.swift; path = PayItForward/Controllers/NameViewController.swift; sourceTree = SOURCE_ROOT; };
 		B23C44191EC007A800950957 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = PayItForward/Controllers/AboutViewController.swift; sourceTree = SOURCE_ROOT; };
 		B25267091EAA9CF700E0C02E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B25B16001EC8E83D006AFC1A /* AccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
 		B26AB5271EBFE7E4009949E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
 		B26AB5291EBFE8F2009949E7 /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddressViewController.swift; path = PayItForward/Controllers/AddressViewController.swift; sourceTree = SOURCE_ROOT; };
 		B26AB52B1EBFF84A009949E7 /* ChooseCommunityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseCommunityViewController.swift; path = PayItForward/Controllers/ChooseCommunityViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -127,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				28BC54E41EBFE50F00A7E16E /* Sign_Up_Flow */,
-				288767961EA41DCF0052A76D /* AccountViewController.swift */,
+				B25B16001EC8E83D006AFC1A /* AccountTableViewController.swift */,
 				288767901EA41DA90052A76D /* CommunitiesViewController.swift */,
 				2890B02B1EAABAE600886C82 /* FirstPageViewController.swift */,
 				2887678E1EA41D9C0052A76D /* HomeViewController.swift */,
@@ -319,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B23C44141EC004D700950957 /* VerifyNewMemberViewController.swift in Sources */,
+				B25B16011EC8E83D006AFC1A /* AccountTableViewController.swift in Sources */,
 				2887679B1EA425630052A76D /* PostTableViewCell.swift in Sources */,
 				288767951EA41DC60052A76D /* MessagesViewController.swift in Sources */,
 				2890B02C1EAABAE600886C82 /* FirstPageViewController.swift in Sources */,
@@ -328,7 +329,6 @@
 				2890B0301EAABAF900886C82 /* ThirdPageViewController.swift in Sources */,
 				288767931EA41DB20052A76D /* PostViewController.swift in Sources */,
 				B252670A1EAA9CF700E0C02E /* Post.swift in Sources */,
-				288767971EA41DCF0052A76D /* AccountViewController.swift in Sources */,
 				28BC54E81EBFF6FD00A7E16E /* CustomColors.swift in Sources */,
 				2890B0281EAAAB7D00886C82 /* User.swift in Sources */,
 				B2952AA21EC0031F00F060C1 /* CreateAccountViewController.swift in Sources */,
