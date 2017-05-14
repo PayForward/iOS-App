@@ -507,7 +507,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RGb-tI-qpO">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="552"/>
                                 <connections>
-                                    <segue destination="j7I-2N-ijG" kind="embed" id="aeX-u6-AG9"/>
+                                    <segue destination="las-7n-6w5" kind="embed" id="DjZ-Po-EMF"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOz-ie-5UV">
@@ -662,28 +662,10 @@
             </objects>
             <point key="canvasLocation" x="256.80000000000001" y="1396.5517241379312"/>
         </scene>
-        <!--Page Container View Controller-->
-        <scene sceneID="x0b-xi-uGR">
-            <objects>
-                <viewController id="j7I-2N-ijG" customClass="PageContainerViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="WP1-Bv-Ot5"/>
-                        <viewControllerLayoutGuide type="bottom" id="CIy-mj-DGV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MUi-A8-pn7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="552"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C6F-IA-nit" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="636" y="-2068.0659670164919"/>
-        </scene>
         <!--First Page View Controller-->
         <scene sceneID="re0-RR-CHk">
             <objects>
-                <viewController storyboardIdentifier="firstPage" id="GgH-2S-50P" customClass="FirstPageViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="firstPage" modalTransitionStyle="flipHorizontal" id="GgH-2S-50P" customClass="FirstPageViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T2l-EH-URI"/>
                         <viewControllerLayoutGuide type="bottom" id="tji-j7-7uN"/>
@@ -756,7 +738,7 @@
         <!--Second Page View Controller-->
         <scene sceneID="dqt-TC-hga">
             <objects>
-                <viewController storyboardIdentifier="secondPage" id="DU6-QG-mui" customClass="SecondPageViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secondPage" modalTransitionStyle="flipHorizontal" id="DU6-QG-mui" customClass="SecondPageViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9TV-8J-yXT"/>
                         <viewControllerLayoutGuide type="bottom" id="qTt-TV-1J6"/>
@@ -895,6 +877,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ntR-24-d61" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2575.1999999999998" y="-2068.0659670164919"/>
+        </scene>
+        <!--Page Container View Controller-->
+        <scene sceneID="aHv-qv-GgR">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="las-7n-6w5" customClass="PageContainerViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ekF-gB-Lis" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="526" y="-2068"/>
         </scene>
     </scenes>
     <resources>
