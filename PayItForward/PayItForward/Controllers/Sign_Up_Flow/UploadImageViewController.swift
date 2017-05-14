@@ -1,30 +1,24 @@
 //
-//  CreateAccountViewController.swift
+//  UploadImageViewController.swift
 //  PayItForward
 //
-//  Created by Jonathan Abercrombie on 5/7/17.
+//  Created by Pankaj Khillon on 5/14/17.
 //  Copyright © 2017 PayItFoward. All rights reserved.
 //
 
 import UIKit
 
-class CreateAccountViewController: UIViewController {
+class UploadImageViewController: UIViewController {
 
-    @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
-    
-    @IBAction func continueWithFB(_ sender: Any) {
+    @IBAction func uploadImage(_ sender: Any) {
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func next(_ sender: UIButton) {
-        performSegue(withIdentifier: "toVerify", sender: nil)
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

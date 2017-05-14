@@ -24,6 +24,7 @@
 		2890B0301EAABAF900886C82 /* ThirdPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890B02F1EAABAF900886C82 /* ThirdPageViewController.swift */; };
 		2890B0321EAAC43700886C82 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890B0311EAAC43700886C82 /* IntroViewController.swift */; };
 		28BC54E81EBFF6FD00A7E16E /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BC54E71EBFF6FD00A7E16E /* CustomColors.swift */; };
+		28F4596B1EC87BEE0043B9BA /* UploadImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4596A1EC87BEE0043B9BA /* UploadImageViewController.swift */; };
 		41CB3972FEE6964D53190C2F /* Pods_PayItForward.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02342E188617EE6198B8EDBB /* Pods_PayItForward.framework */; };
 		B206025D1EA4365000D94A43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B206025C1EA4365000D94A43 /* GoogleService-Info.plist */; };
 		B23C44141EC004D700950957 /* VerifyNewMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23C44131EC004D700950957 /* VerifyNewMemberViewController.swift */; };
@@ -59,6 +60,7 @@
 		2890B02F1EAABAF900886C82 /* ThirdPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdPageViewController.swift; sourceTree = "<group>"; };
 		2890B0311EAAC43700886C82 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		28BC54E71EBFF6FD00A7E16E /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		28F4596A1EC87BEE0043B9BA /* UploadImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImageViewController.swift; sourceTree = "<group>"; };
 		6F222FE0A63DED231C716579 /* Pods-PayItForward.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayItForward.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PayItForward/Pods-PayItForward.debug.xcconfig"; sourceTree = "<group>"; };
 		B206025C1EA4365000D94A43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B23C44131EC004D700950957 /* VerifyNewMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerifyNewMemberViewController.swift; path = PayItForward/Controllers/VerifyNewMemberViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -159,6 +161,7 @@
 				B23C44131EC004D700950957 /* VerifyNewMemberViewController.swift */,
 				B23C44151EC006A200950957 /* VerificationCodeViewController.swift */,
 				B2952A9F1EBFFF4900F060C1 /* TermsOfServiceViewController.swift */,
+				28F4596A1EC87BEE0043B9BA /* UploadImageViewController.swift */,
 			);
 			path = Sign_Up_Flow;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				2890B0321EAAC43700886C82 /* IntroViewController.swift in Sources */,
 				B2952AA01EBFFF4900F060C1 /* TermsOfServiceViewController.swift in Sources */,
 				B26AB52C1EBFF84A009949E7 /* ChooseCommunityViewController.swift in Sources */,
+				28F4596B1EC87BEE0043B9BA /* UploadImageViewController.swift in Sources */,
 				B23C44181EC006F200950957 /* NameViewController.swift in Sources */,
 				2887677C1EA41A880052A76D /* AppDelegate.swift in Sources */,
 				2890B02E1EAABAEF00886C82 /* SecondPageViewController.swift in Sources */,
