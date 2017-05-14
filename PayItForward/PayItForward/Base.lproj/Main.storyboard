@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="K6M-oX-uop">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="K6M-oX-uop">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -48,7 +48,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lac-4w-YQJ" id="L1v-B4-8M8">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -126,7 +126,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I4t-JM-8t6" id="lau-oy-57C">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -349,7 +349,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.031372549020000001" green="0.41176470590000003" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.61960784310000006" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="jdj-IC-hiK" firstAttribute="centerX" secondItem="I3O-Kq-oAM" secondAttribute="centerX" id="CDk-af-C8n"/>
                                     <constraint firstItem="n8R-hn-5AQ" firstAttribute="leading" secondItem="2cq-NG-l4c" secondAttribute="trailing" constant="13" id="EkV-u4-OgV"/>
@@ -384,7 +384,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5ul-rS-dHd" id="dXD-SE-2hF">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5B-F6-iM3">
@@ -582,10 +582,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="krd-vu-bKN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Communities" id="CZj-fn-Gcw" userLabel="Communities"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qMP-ES-M20">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qMP-ES-M20">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.031372549019607843" green="0.41176470588235292" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.24313725489999999" green="0.61960784310000006" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
@@ -605,10 +605,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o8w-Qh-dPL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Post" id="gOa-Bq-jOT"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FI8-x2-Wn8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="FI8-x2-Wn8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.031372549020000001" green="0.41176470590000003" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.24313725489999999" green="0.61960784310000006" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
@@ -628,10 +628,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SSe-t5-y6u" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Messages" id="fkh-QN-ime"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="awX-Di-1Ua">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="awX-Di-1Ua">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.16869473457336426" green="0.49503183364868164" blue="0.61387205123901367" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.24313725489999999" green="0.61960784310000006" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -648,9 +648,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Edj-TZ-Nvu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Account" id="ams-oI-I1W"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jvt-aQ-UVz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="jvt-aQ-UVz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.24313725489999999" green="0.61960784310000006" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -707,7 +708,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.032058179378509521" green="0.41347140073776245" blue="0.55513149499893188" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.61960784310000006" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="IrP-cm-QzR" firstAttribute="centerX" secondItem="qUB-E3-jBy" secondAttribute="centerX" id="JkF-6b-fhA"/>
                                     <constraint firstAttribute="bottom" secondItem="IrP-cm-QzR" secondAttribute="bottom" id="Npn-vz-kN5"/>
@@ -780,7 +781,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.032058179380000003" green="0.41347140069999999" blue="0.55513149500000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.61960784310000006" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="eLc-e8-rPi" firstAttribute="top" secondItem="AF4-8x-gtJ" secondAttribute="top" constant="20" id="Ohi-PE-E4U"/>
                                     <constraint firstAttribute="bottom" secondItem="eLc-e8-rPi" secondAttribute="bottom" id="QbQ-GM-CZ6"/>
@@ -848,7 +849,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.032058179380000003" green="0.41347140069999999" blue="0.55513149500000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.61960784310000006" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="p7C-Om-MdM" firstAttribute="top" secondItem="Ych-l5-g9c" secondAttribute="top" constant="20" id="TjB-ai-YHW"/>
                                     <constraint firstAttribute="bottom" secondItem="p7C-Om-MdM" secondAttribute="bottom" id="X7k-k9-yQ1"/>
