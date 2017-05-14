@@ -143,6 +143,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="B8h-It-vdn"/>
+                    <connections>
+                        <outlet property="unreadMessagesLabel" destination="HIz-Cn-3bF" id="cbY-sE-3xk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yeM-m5-I8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

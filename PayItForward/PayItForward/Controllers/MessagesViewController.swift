@@ -10,6 +10,8 @@ import UIKit
 
 class MessagesViewController: UIViewController {
 
+    @IBOutlet weak var unreadMessagesLabel: UILabel!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
