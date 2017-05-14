@@ -10,10 +10,22 @@ import UIKit
 
 class AccountViewController: UIViewController {
 
+    @IBOutlet weak var picture: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var points: UILabel!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    // when user hits info button in top left corner
+    @IBAction func info(_ sender: UIButton) {
+    }
+    
+    // when user hits gear icon in top right corner
+    @IBAction func settings(_ sender: UIButton) {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
