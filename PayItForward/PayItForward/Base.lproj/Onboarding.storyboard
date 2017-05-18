@@ -1033,10 +1033,10 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
             </objects>
             <point key="canvasLocation" x="6149.6000000000004" y="-214.54272863568218"/>
         </scene>
-        <!--View Controller-->
+        <!--Offer Choices View Controller-->
         <scene sceneID="a4e-md-RdL">
             <objects>
-                <viewController id="mx3-Jw-9YQ" sceneMemberID="viewController">
+                <viewController id="mx3-Jw-9YQ" customClass="OfferChoicesViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5RK-IM-T0R"/>
                         <viewControllerLayoutGuide type="bottom" id="5Ui-U7-Vsz"/>
@@ -1437,10 +1437,10 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
             </objects>
             <point key="canvasLocation" x="10607.200000000001" y="-201.04947526236884"/>
         </scene>
-        <!--View Controller-->
+        <!--Set Location View Controller-->
         <scene sceneID="COi-wd-ulf">
             <objects>
-                <viewController id="sgs-Rg-7MS" sceneMemberID="viewController">
+                <viewController id="sgs-Rg-7MS" customClass="SetLocationViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xTZ-ve-S2x"/>
                         <viewControllerLayoutGuide type="bottom" id="iZM-58-SdM"/>
@@ -1492,40 +1492,43 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JOF-HR-8wb">
-                                <rect key="frame" x="16" y="321" width="343" height="326"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4S-Gj-joL">
+                                <rect key="frame" x="16" y="338" width="343" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ll9-Xr-egf">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ll9-Xr-egf" id="QSs-ph-45c">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="ykO-s8-RGP" kind="show" id="JXo-v1-2lt"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Share address with my community">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ykO-s8-RGP" kind="show" id="WMq-Xo-B14"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJP-Cd-a8U">
+                                <rect key="frame" x="16" y="425" width="343" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Only share general vicinity">
+                                    <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ykO-s8-RGP" kind="show" id="z2q-iF-ZsH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96875399350000002" green="0.96095770599999997" blue="0.95240873100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="E9A-Lx-ncs" firstAttribute="leading" secondItem="ZI9-bi-Wrh" secondAttribute="leading" id="5ug-Io-YBs"/>
-                            <constraint firstItem="E9A-Lx-ncs" firstAttribute="trailing" secondItem="JOF-HR-8wb" secondAttribute="trailing" id="7Tc-T7-YUd"/>
                             <constraint firstItem="aoS-Lv-qOe" firstAttribute="leading" secondItem="dM1-Gx-acr" secondAttribute="leading" id="7jD-Zh-XqU"/>
                             <constraint firstItem="jmD-kT-MxE" firstAttribute="leading" secondItem="iI1-Jj-qqQ" secondAttribute="leadingMargin" constant="25" id="8qR-f8-5vp"/>
                             <constraint firstItem="dM1-Gx-acr" firstAttribute="top" secondItem="aoS-Lv-qOe" secondAttribute="bottom" constant="8" symbolic="YES" id="9Mq-bv-Z5t"/>
-                            <constraint firstItem="ZI9-bi-Wrh" firstAttribute="leading" secondItem="JOF-HR-8wb" secondAttribute="leading" id="IEa-pX-09M"/>
                             <constraint firstItem="jmD-kT-MxE" firstAttribute="top" secondItem="dM1-Gx-acr" secondAttribute="bottom" constant="8" symbolic="YES" id="KXI-fC-Lra"/>
                             <constraint firstItem="aoS-Lv-qOe" firstAttribute="top" secondItem="xTZ-ve-S2x" secondAttribute="bottom" constant="8" symbolic="YES" id="Lhj-kS-hFw"/>
                             <constraint firstItem="aoS-Lv-qOe" firstAttribute="trailing" secondItem="iI1-Jj-qqQ" secondAttribute="trailingMargin" id="Mxp-fF-D08"/>
                             <constraint firstItem="aoS-Lv-qOe" firstAttribute="trailing" secondItem="dM1-Gx-acr" secondAttribute="trailing" id="PEM-Dj-h3J"/>
                             <constraint firstItem="aoS-Lv-qOe" firstAttribute="leading" secondItem="iI1-Jj-qqQ" secondAttribute="leadingMargin" id="QaT-6I-b4A"/>
                             <constraint firstItem="ZI9-bi-Wrh" firstAttribute="top" secondItem="E9A-Lx-ncs" secondAttribute="bottom" constant="37" id="Rhu-Mq-MRk"/>
-                            <constraint firstAttribute="bottom" secondItem="JOF-HR-8wb" secondAttribute="bottom" constant="20" symbolic="YES" id="Ug9-Gv-iU1"/>
-                            <constraint firstItem="JOF-HR-8wb" firstAttribute="top" secondItem="ZI9-bi-Wrh" secondAttribute="bottom" constant="8" symbolic="YES" id="Yup-uP-pbo"/>
                             <constraint firstItem="dM1-Gx-acr" firstAttribute="leading" secondItem="E9A-Lx-ncs" secondAttribute="leading" id="dI3-Kv-RoB"/>
                             <constraint firstItem="dM1-Gx-acr" firstAttribute="centerX" secondItem="jmD-kT-MxE" secondAttribute="centerX" id="iBL-sI-tJD"/>
                             <constraint firstItem="dM1-Gx-acr" firstAttribute="trailing" secondItem="E9A-Lx-ncs" secondAttribute="trailing" id="mve-Ch-gpC"/>
@@ -1537,10 +1540,10 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
             </objects>
             <point key="canvasLocation" x="11288.799999999999" y="-202.84857571214394"/>
         </scene>
-        <!--View Controller-->
+        <!--Travel Choice View Controller-->
         <scene sceneID="THu-GW-vMf">
             <objects>
-                <viewController id="ykO-s8-RGP" sceneMemberID="viewController">
+                <viewController id="ykO-s8-RGP" customClass="TravelChoiceViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CRp-Qo-4nA"/>
                         <viewControllerLayoutGuide type="bottom" id="D82-7W-GQc"/>
@@ -1648,10 +1651,10 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
             </objects>
             <point key="canvasLocation" x="12013.6" y="-201.04947526236884"/>
         </scene>
-        <!--View Controller-->
+        <!--Charge Points View Controller-->
         <scene sceneID="lpT-lQ-IXt">
             <objects>
-                <viewController id="Bfw-XB-WHd" sceneMemberID="viewController">
+                <viewController id="Bfw-XB-WHd" customClass="ChargePointsViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Tu-Lt-ia7"/>
                         <viewControllerLayoutGuide type="bottom" id="Cac-Fk-b4q"/>
@@ -1757,10 +1760,10 @@ If you’re unsure how much to charge, consider Paying It Forward. Have a commun
             </objects>
             <point key="canvasLocation" x="12765.6" y="-203.74812593703149"/>
         </scene>
-        <!--View Controller-->
+        <!--Preview Post View Controller-->
         <scene sceneID="9zw-nf-ByU">
             <objects>
-                <viewController id="kX6-25-0KX" sceneMemberID="viewController">
+                <viewController id="kX6-25-0KX" customClass="PreviewPostViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BZz-V4-Zhk"/>
                         <viewControllerLayoutGuide type="bottom" id="pdl-gj-90k"/>
@@ -1944,9 +1947,9 @@ If you’re unsure how much to charge, consider Paying It Forward. Have a commun
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obp-da-d5b">
                                                 <rect key="frame" x="8" y="37" width="317" height="578"/>
-                                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                                                <string key="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
 
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. N</mutableString>
+In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. N</string>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2155,6 +2158,7 @@ In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum fe
         <image name="UploadImage" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="z2q-iF-ZsH"/>
         <segue reference="gjj-fv-AR3"/>
     </inferredMetricsTieBreakers>
 </document>
