@@ -27,10 +27,11 @@ class ChooseCommunityViewController: UIViewController {
     }
 
     @IBAction func joinSlocals(_ sender: UIButton) {
-        
+        // TODO: Firebase add user to community
     }
+    
     @IBAction func joinCalPoly(_ sender: UIButton) {
-        
+        // TODO: see above
     }
     
     override func didReceiveMemoryWarning() {

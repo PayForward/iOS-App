@@ -7,14 +7,34 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class CreateAccountViewController: UIViewController {
 
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
-    @IBAction func continueWithFB(_ sender: Any) {
+    @IBAction func createAccountWithEmailAndPassword(_ sender: Any) {
+        if emailIsValid() && passwordIsValid() {
+            register(withEmail: self.emailField.text!, password: self.passwordField.text!)
+        }
     }
+    @IBAction func continueWithFB(_ sender: Any) {
+        // TODO
+    }
+    
+    func emailIsValid() -> Bool {
+        // TODO
+    }
+    
+    func passwordIsValid() -> Bool {
+        // TODO
+    }
+    
+    func register(withEmail email: String, password: String) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

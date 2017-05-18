@@ -17,6 +17,10 @@ class TermsOfServiceViewController: UIViewController {
     }
 
     @IBAction func doNotAccept(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Are you sure?", message: "You must accept the terms and conditions to use PayItForward. If you still do not accept, please uninstall the app.", preferredStyle: .alert)
+        alert.addAction(.init(title: "OK", style: .default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func accept(_ sender: UIButton) {
