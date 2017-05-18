@@ -8,6 +8,8 @@
 
 import UIKit
 import FirebaseAuth
+import FacebookCore
+import FacebookLogin
 
 class CreateAccountViewController: UIViewController {
 
@@ -18,9 +20,6 @@ class CreateAccountViewController: UIViewController {
         if emailIsValid() && passwordIsValid() {
             register(withEmail: self.emailField.text!, password: self.passwordField.text!)
         }
-    }
-    @IBAction func continueWithFB(_ sender: Any) {
-        // TODO
     }
     
     func emailIsValid() -> Bool {
@@ -35,10 +34,31 @@ class CreateAccountViewController: UIViewController {
         
     }
     
+    func loginWithFB() {
+        let loginManager = LoginManager()
+            
+        loginManager.logIn([.email, .publicProfile], viewController: self, completion: { (LoginResult) in
+            switch LoginResult {
+            case .failed(let error):
+                print(error)
+            case .cancelled:
+                print("User cancelled login")
+            case .success(grantedPermissions: let grantedPermissions, declinedPermissions: let declinedPermissions, token: let accessToken):
+                print("Logged in")
+            }
+        })
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let fbLoginButton = UIButton(type: .custom)
+        fbLoginButton.setBackgroundImage(#imageLiteral(resourceName: "ContinueWithFacebook"), for: .normal)
+        fbLoginButton.frame = CGRect(x: 16, y: 168, width: 343, height: 50)
+        
+        fbLoginButton.addTarget(self, action: #selector(self.loginWithFB), for: .touchUpInside)
+        view.addSubview(fbLoginButton)
+        
     }
 
     @IBAction func next(_ sender: UIButton) {

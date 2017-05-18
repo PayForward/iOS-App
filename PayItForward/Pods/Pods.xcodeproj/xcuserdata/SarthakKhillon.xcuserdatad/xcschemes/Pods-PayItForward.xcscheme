@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D5B0ECDD2E83D26854277836DB76E9F3"
+               BlueprintIdentifier = "739048CC1E23DDC1BD8BDEB579E5F2BE"
                BuildableName = "Pods_PayItForward.framework"
                BlueprintName = "Pods-PayItForward"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5B0ECDD2E83D26854277836DB76E9F3"
+            BlueprintIdentifier = "739048CC1E23DDC1BD8BDEB579E5F2BE"
             BuildableName = "Pods_PayItForward.framework"
             BlueprintName = "Pods-PayItForward"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5B0ECDD2E83D26854277836DB76E9F3"
-            BuildableName = "Pods_PayItForward.framework"
-            BlueprintName = "Pods-PayItForward"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
