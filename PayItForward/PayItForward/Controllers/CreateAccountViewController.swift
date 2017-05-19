@@ -16,53 +16,91 @@ class CreateAccountViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
+    let fbManager = LoginManager(loginBehavior: .systemAccount, defaultAudience: .everyone)
+    let loginButton = { () -> LoginButton in 
+        let button = LoginButton(readPermissions: [.email, .publicProfile])
+        return button
+    }
+    
+    
     @IBAction func createAccountWithEmailAndPassword(_ sender: Any) {
-        if emailIsValid() && passwordIsValid() {
-            register(withEmail: self.emailField.text!, password: self.passwordField.text!)
+        if emailIsValid() {
+            if passwordIsValid() {
+                register(withEmail: self.emailField.text!, password: self.passwordField.text!)
+            }
+            else {
+                showLoginError(saying: "The password field is invalid.")
+            }
+        }
+        else {
+            showLoginError(saying: "The email field is invalid.")
         }
     }
     
+    func showLoginError(saying message: String) {
+        let alertController = UIAlertController(title: "Uh Oh!", message: message, preferredStyle: .alert)
+        alertController.addAction(.init(title: "OK", style: .default, handler: nil))
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
     func emailIsValid() -> Bool {
-        // TODO
+        // trim whitespace
+        let emailText = self.emailField.text!.trimmingCharacters(in: .whitespaces)
+        
+        let pattern = "\\w+.\\w+@\\w+.\\w+.\\w+"
+        let regex = try! NSRegularExpression(pattern: pattern, options: [])
+        let matches = regex.matches(in: emailText, options: [], range: NSRange(location: 0, length: emailText.characters.count))
+        
+        self.emailField.text = emailText
+        
+        return matches.count > 0
     }
     
     func passwordIsValid() -> Bool {
-        // TODO
+        // trim whitespace
+        self.passwordField.text = self.passwordField.text!.trimmingCharacters(in: .whitespaces)
+        
+        let minRequiredCharCount = 8
+        
+        return self.passwordField.text!.characters.count > minRequiredCharCount
     }
     
     func register(withEmail email: String, password: String) {
-        
+        // TODO: on completion perform segue "toVerify"
+        print("registering")
     }
     
-    func loginWithFB() {
-        let loginManager = LoginManager()
-            
-        loginManager.logIn([.email, .publicProfile], viewController: self, completion: { (LoginResult) in
-            switch LoginResult {
-            case .failed(let error):
-                print(error)
-            case .cancelled:
-                print("User cancelled login")
-            case .success(grantedPermissions: let grantedPermissions, declinedPermissions: let declinedPermissions, token: let accessToken):
-                print("Logged in")
-            }
-        })
+    func fetchProfile(with token: AccessToken) {
+//        print("fetching profile")
+//        
+//        let parameters = ["fields": "email, first_name, last_name, picture.type(large)"]
+//        GraphRequest(graphPath: "me", parameters: parameters, accessToken: token, httpMethod: .GET, apiVersion: .defaultVersion) { (connection, result, error) -> Void in
+//        
+//            if error != nil {
+//                print(error)
+//                return
+//            }
+//            
+//            i
+//        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let fbLoginButton = UIButton(type: .custom)
-        fbLoginButton.setBackgroundImage(#imageLiteral(resourceName: "ContinueWithFacebook"), for: .normal)
-        fbLoginButton.frame = CGRect(x: 16, y: 168, width: 343, height: 50)
         
-        fbLoginButton.addTarget(self, action: #selector(self.loginWithFB), for: .touchUpInside)
-        view.addSubview(fbLoginButton)
+        view.addSubview(self.loginButton())
         
-    }
-
-    @IBAction func next(_ sender: UIButton) {
-        performSegue(withIdentifier: "toVerify", sender: nil)
+        if let token = AccessToken.current {
+            //self.fetchProfile()
+        }
+        
+        // pad text view
+        let padding = 5
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: padding, height: 50))
+        
+        self.emailField.leftView = paddingView
+        self.passwordField.leftView = paddingView
     }
     
     override func didReceiveMemoryWarning() {
@@ -81,4 +119,15 @@ class CreateAccountViewController: UIViewController {
     }
     */
 
+}
+
+extension CreateAccountViewController: LoginButtonDelegate {
+    
+    func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
+        print("completed login")
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: LoginButton) {
+        print("logged out user")
+    }
 }
