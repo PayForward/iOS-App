@@ -11,6 +11,7 @@ import UIKit
 class VerificationCodeViewController: UIViewController {
 
     @IBOutlet weak var verificationCodeField: UITextField!
+    var verificationCode: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()

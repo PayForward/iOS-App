@@ -701,6 +701,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                         </button>
                     </navigationItem>
                     <connections>
+                        <outlet property="phoneNumberField" destination="1OW-WI-Aj8" id="gAx-Zj-3c2"/>
                         <segue destination="uFx-Ei-ymK" kind="show" identifier="toVerificationCode" id="PxU-Sf-mn7"/>
                     </connections>
                 </viewController>

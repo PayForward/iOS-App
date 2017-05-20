@@ -67,8 +67,19 @@ class CreateAccountViewController: UIViewController {
     }
     
     func register(withEmail email: String, password: String) {
-        // TODO: on completion perform segue "toVerify"
         print("registering")
+        
+        FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
+            if error != nil {
+                print(error)
+            }
+            else {
+                print("user data below")
+                print(user)
+            }
+            
+            self.performSegue(withIdentifier: "toVerify", sender: self)
+        }
     }
     
     func fetchProfile(with token: AccessToken) {

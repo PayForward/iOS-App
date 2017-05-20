@@ -78,6 +78,7 @@
 		28FBDB1E1ECE53D800E4C314 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		28FBDB1F1ECE53D800E4C314 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		28FBDB201ECE53D800E4C314 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		28FBDB251ED020CE00E4C314 /* PayItForward.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PayItForward.entitlements; sourceTree = "<group>"; };
 		6F222FE0A63DED231C716579 /* Pods-PayItForward.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayItForward.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PayItForward/Pods-PayItForward.debug.xcconfig"; sourceTree = "<group>"; };
 		B206025C1EA4365000D94A43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B23C44131EC004D700950957 /* VerifyNewMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerifyNewMemberViewController.swift; path = PayItForward/Controllers/VerifyNewMemberViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -131,6 +132,7 @@
 		2887677A1EA41A880052A76D /* PayItForward */ = {
 			isa = PBXGroup;
 			children = (
+				28FBDB251ED020CE00E4C314 /* PayItForward.entitlements */,
 				2887677B1EA41A880052A76D /* AppDelegate.swift */,
 				B25267081EAA9CE400E0C02E /* Model */,
 				288767991EA424FC0052A76D /* Views */,
@@ -260,6 +262,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 349CBR8K37;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -509,6 +516,7 @@
 			baseConfigurationReference = 6F222FE0A63DED231C716579 /* Pods-PayItForward.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PayItForward/PayItForward.entitlements;
 				DEVELOPMENT_TEAM = 349CBR8K37;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -527,6 +535,7 @@
 			baseConfigurationReference = D392D23A4CC15AC1BEDEE71E /* Pods-PayItForward.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PayItForward/PayItForward.entitlements;
 				DEVELOPMENT_TEAM = 349CBR8K37;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

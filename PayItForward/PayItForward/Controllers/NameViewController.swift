@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class NameViewController: UIViewController {
 
     @IBOutlet weak var firstNameField: UITextField!
     @IBOutlet weak var lastNameField: UITextField!
+    
+    var ref: FIRDatabaseReference!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +24,8 @@ class NameViewController: UIViewController {
     }
 
     @IBAction func next(_ sender: UIButton) {
+        
+        
         performSegue(withIdentifier: "toAbout", sender: nil)
     }
     
