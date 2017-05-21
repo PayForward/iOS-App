@@ -98,6 +98,7 @@ class CreateAccountViewController: UIViewController {
         view.addSubview(self.loginButton())
         
         if let token = AccessToken.current {
+            print("signed in")
             //self.fetchProfile()
         }
         
