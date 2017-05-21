@@ -618,6 +618,14 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
             </objects>
             <point key="canvasLocation" x="2168.8000000000002" y="-214.54272863568218"/>
         </scene>
+        <!--loginVC-->
+        <scene sceneID="Auw-Q7-mQ2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="loginVC" id="dOJ-hq-flP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sGQ-bu-J9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3182" y="589"/>
+        </scene>
         <!--Verify New Member View Controller-->
         <scene sceneID="AmK-Cm-NH5">
             <objects>
@@ -671,6 +679,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="next:" destination="VGl-6e-zKA" eventType="touchUpInside" id="1ew-uj-nd0"/>
+                                    <segue destination="dOJ-hq-flP" kind="show" id="4kE-Pv-egf"/>
                                 </connections>
                             </button>
                         </subviews>

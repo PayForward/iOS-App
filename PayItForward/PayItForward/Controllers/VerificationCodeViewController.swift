@@ -20,7 +20,20 @@ class VerificationCodeViewController: UIViewController {
     }
 
     @IBAction func next(_ sender: UIButton) {
-        performSegue(withIdentifier: "toName", sender: nil)
+        if verificationCodeIsValid() {
+            performSegue(withIdentifier: "toName", sender: nil)
+        }
+        else {
+            let warningVC = createWarningAlert(withTitle: "Your code does not match ours.", message: "Check to see if you entered it correctly.")
+            self.present(warningVC, animated: true, completion: nil)
+        }
+    }
+    
+    func verificationCodeIsValid() -> Bool {
+        // TODO: get verification code
+        //return self.verificationCodeField.text == verificationCode
+        
+        return true
     }
     
     override func didReceiveMemoryWarning() {

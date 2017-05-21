@@ -19,6 +19,9 @@ class AddressViewController: UIViewController {
     var currentLocation:CLLocation?
     var usedLocationFinder = false
     
+    var sloZipCodes = ["93401", "93403", "93405", "93406", "93408", "93410"]
+    var userZipCode: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,6 +38,7 @@ class AddressViewController: UIViewController {
         
     }
     
+    /// Phone finds user's location
     @IBAction func useCurrentLocation(_ sender: UIButton) {
         CLGeocoder().reverseGeocodeLocation(self.currentLocation!) { (placemarks, error) in
             if error != nil && (placemarks?.count)! > 0 {
@@ -43,6 +47,7 @@ class AddressViewController: UIViewController {
             }
             
             let placemark = (placemarks?.first)!
+            self.userZipCode = placemark.postalCode!
             self.addressField.text = placemark.name ?? "\(self.currentLocation!.coordinate.latitude), \(self.currentLocation!.coordinate.longitude)"
             self.usedLocationFinder = true
             print("reverse location: \(self.addressField.text!)")
@@ -60,10 +65,32 @@ class AddressViewController: UIViewController {
             self.getLocation(from: self.addressField.text!)
         }
         
-        self.save(self.currentLocation!)
-        performSegue(withIdentifier: "next", sender: nil)
+        User.shared.address = self.addressField.text!
+        
+        if zipCodeIsValid() {
+            performSegue(withIdentifier: "next", sender: nil)
+        }
+        else {
+            let warningVC = createWarningAlert(withTitle: "PayItForward is currently available only in San Luis Obispo", message: "Stay tuned as we expand!")
+            
+            self.present(warningVC, animated: true, completion: nil)
+        }
     }
     
+    // ERROR: this doesn't work right either :/
+    /// Checks if zip code is within SLO
+    func zipCodeIsValid() -> Bool {
+//        for zip in sloZipCodes {
+//            if userZipCode == zip {
+//                return true
+//            }
+//        }
+        
+        return true
+    }
+    
+    // ERROR: THIS DOESN'T WORK YET.
+    /// User inputs their addresss
     func getLocation(from address: String) {
         CLGeocoder().geocodeAddressString(address) { (placemarks, error) in
             guard error != nil && (placemarks?.count)! > 0 else {
@@ -72,19 +99,9 @@ class AddressViewController: UIViewController {
             }
             
             let placemark = (placemarks?.first)!
+            self.userZipCode = placemark.postalCode!
             self.currentLocation = placemark.location!
-            print(self.currentLocation)
         }
-    }
-    
-    func save(_ userLoc: CLLocation) {
-        print("saved")
-        //        let userRef = FIRDatabase.database().reference(withPath: "user")
-        //        let lat = userLoc.coordinate.latitude
-        //        let long = userLoc.coordinate.longitude
-        //
-        //        userRef.child("location").child("longitude").setValue(long)
-        //        userRef.child("location").child("latitude").setValue(lat)
     }
     
     override func didReceiveMemoryWarning() {

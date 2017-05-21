@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28791B3D1ED239D500DA4881 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28791B3C1ED239D500DA4881 /* Globals.swift */; };
 		2887677C1EA41A880052A76D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2887677B1EA41A880052A76D /* AppDelegate.swift */; };
 		288767811EA41A880052A76D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2887677F1EA41A880052A76D /* Main.storyboard */; };
 		288767831EA41A880052A76D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 288767821EA41A880052A76D /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		02342E188617EE6198B8EDBB /* Pods_PayItForward.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayItForward.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28791B3C1ED239D500DA4881 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		288767781EA41A880052A76D /* PayItForward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayItForward.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2887677B1EA41A880052A76D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		288767801EA41A880052A76D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,7 +83,7 @@
 		28FBDB251ED020CE00E4C314 /* PayItForward.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PayItForward.entitlements; sourceTree = "<group>"; };
 		6F222FE0A63DED231C716579 /* Pods-PayItForward.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayItForward.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PayItForward/Pods-PayItForward.debug.xcconfig"; sourceTree = "<group>"; };
 		B206025C1EA4365000D94A43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B23C44131EC004D700950957 /* VerifyNewMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerifyNewMemberViewController.swift; path = PayItForward/Controllers/VerifyNewMemberViewController.swift; sourceTree = SOURCE_ROOT; };
+		B23C44131EC004D700950957 /* VerifyNewMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = VerifyNewMemberViewController.swift; path = PayItForward/Controllers/VerifyNewMemberViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B23C44151EC006A200950957 /* VerificationCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerificationCodeViewController.swift; path = PayItForward/Controllers/VerificationCodeViewController.swift; sourceTree = SOURCE_ROOT; };
 		B23C44171EC006F200950957 /* NameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameViewController.swift; path = PayItForward/Controllers/NameViewController.swift; sourceTree = SOURCE_ROOT; };
 		B23C44191EC007A800950957 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = PayItForward/Controllers/AboutViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -91,7 +93,7 @@
 		B26AB5291EBFE8F2009949E7 /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddressViewController.swift; path = PayItForward/Controllers/AddressViewController.swift; sourceTree = SOURCE_ROOT; };
 		B26AB52B1EBFF84A009949E7 /* ChooseCommunityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseCommunityViewController.swift; path = PayItForward/Controllers/ChooseCommunityViewController.swift; sourceTree = SOURCE_ROOT; };
 		B2952A9F1EBFFF4900F060C1 /* TermsOfServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TermsOfServiceViewController.swift; path = PayItForward/Controllers/TermsOfServiceViewController.swift; sourceTree = SOURCE_ROOT; };
-		B2952AA11EC0031F00F060C1 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateAccountViewController.swift; path = PayItForward/Controllers/CreateAccountViewController.swift; sourceTree = SOURCE_ROOT; };
+		B2952AA11EC0031F00F060C1 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = CreateAccountViewController.swift; path = PayItForward/Controllers/CreateAccountViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D392D23A4CC15AC1BEDEE71E /* Pods-PayItForward.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayItForward.release.xcconfig"; path = "Pods/Target Support Files/Pods-PayItForward/Pods-PayItForward.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,6 +211,7 @@
 			children = (
 				B25267091EAA9CF700E0C02E /* Post.swift */,
 				2890B0271EAAAB7D00886C82 /* User.swift */,
+				28791B3C1ED239D500DA4881 /* Globals.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				B26AB52A1EBFE8F2009949E7 /* AddressViewController.swift in Sources */,
 				28D2E4BD1ECCD5D400FC98E2 /* OfferChoicesViewController.swift in Sources */,
 				2890B02A1EAABAB700886C82 /* PageContainerViewController.swift in Sources */,
+				28791B3D1ED239D500DA4881 /* Globals.swift in Sources */,
 				B23C44161EC006A200950957 /* VerificationCodeViewController.swift in Sources */,
 				2890B0301EAABAF900886C82 /* ThirdPageViewController.swift in Sources */,
 				288767931EA41DB20052A76D /* PostViewController.swift in Sources */,

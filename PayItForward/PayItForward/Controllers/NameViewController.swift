@@ -7,15 +7,11 @@
 //
 
 import UIKit
-import FirebaseDatabase
 
 class NameViewController: UIViewController {
 
     @IBOutlet weak var firstNameField: UITextField!
     @IBOutlet weak var lastNameField: UITextField!
-    
-    var ref: FIRDatabaseReference!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +20,25 @@ class NameViewController: UIViewController {
     }
 
     @IBAction func next(_ sender: UIButton) {
+        if namesAreValid() {
+            User.shared.firstName = self.firstNameField.text!
+            User.shared.lastName = self.lastNameField.text!
+            
+            performSegue(withIdentifier: "toAbout", sender: nil)
+        }
+        else {
+            let warningVC = createWarningAlert(withTitle: "Names cannot be empty", message: "One or more of the name fields are empty.")
+        }
+    }
+    
+    func namesAreValid() -> Bool {
+        self.firstNameField.text = self.firstNameField.text?.trimmingCharacters(in: .whitespaces)
+        self.lastNameField.text = self.lastNameField.text?.trimmingCharacters(in: .whitespaces)
         
+        let fNameCount = self.firstNameField.text?.characters.count ?? 0
+        let lNameCount = self.lastNameField.text?.characters.count ?? 0
         
-        performSegue(withIdentifier: "toAbout", sender: nil)
+        return fNameCount > 0 && lNameCount > 0
     }
     
     override func didReceiveMemoryWarning() {
