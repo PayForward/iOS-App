@@ -46,6 +46,7 @@
 		B26AB52C1EBFF84A009949E7 /* ChooseCommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AB52B1EBFF84A009949E7 /* ChooseCommunityViewController.swift */; };
 		B2952AA01EBFFF4900F060C1 /* TermsOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2952A9F1EBFFF4900F060C1 /* TermsOfServiceViewController.swift */; };
 		B2952AA21EC0031F00F060C1 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2952AA11EC0031F00F060C1 /* CreateAccountViewController.swift */; };
+		B2B913771ED24AAF001293B5 /* OfferingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B913761ED24AAF001293B5 /* OfferingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		B26AB52B1EBFF84A009949E7 /* ChooseCommunityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseCommunityViewController.swift; path = PayItForward/Controllers/ChooseCommunityViewController.swift; sourceTree = SOURCE_ROOT; };
 		B2952A9F1EBFFF4900F060C1 /* TermsOfServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TermsOfServiceViewController.swift; path = PayItForward/Controllers/TermsOfServiceViewController.swift; sourceTree = SOURCE_ROOT; };
 		B2952AA11EC0031F00F060C1 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateAccountViewController.swift; path = PayItForward/Controllers/CreateAccountViewController.swift; sourceTree = SOURCE_ROOT; };
+		B2B913761ED24AAF001293B5 /* OfferingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OfferingTableViewCell.swift; path = PayItForward/Views/OfferingTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		D392D23A4CC15AC1BEDEE71E /* Pods-PayItForward.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayItForward.release.xcconfig"; path = "Pods/Target Support Files/Pods-PayItForward/Pods-PayItForward.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,8 +170,9 @@
 		288767991EA424FC0052A76D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2887679A1EA425630052A76D /* PostTableViewCell.swift */,
 				28BC54E71EBFF6FD00A7E16E /* CustomColors.swift */,
+				B2B913761ED24AAF001293B5 /* OfferingTableViewCell.swift */,
+				2887679A1EA425630052A76D /* PostTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				B23C44161EC006A200950957 /* VerificationCodeViewController.swift in Sources */,
 				2890B0301EAABAF900886C82 /* ThirdPageViewController.swift in Sources */,
 				288767931EA41DB20052A76D /* PostViewController.swift in Sources */,
+				B2B913771ED24AAF001293B5 /* OfferingTableViewCell.swift in Sources */,
 				B252670A1EAA9CF700E0C02E /* Post.swift in Sources */,
 				28BC54E81EBFF6FD00A7E16E /* CustomColors.swift in Sources */,
 				2890B0281EAAAB7D00886C82 /* User.swift in Sources */,
