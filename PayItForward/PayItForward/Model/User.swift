@@ -21,4 +21,6 @@ class User {
     var following = [String]()    // uid
     var followers = [String]()    // uid
     var address: String!
+    var shareChoice: AddressShareChoice!
+    var travelChoice: Int!
 }

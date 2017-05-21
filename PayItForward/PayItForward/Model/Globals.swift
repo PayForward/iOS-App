@@ -15,3 +15,8 @@ func createWarningAlert(withTitle title: String, message: String) -> UIViewContr
     
     return alertController
 }
+
+enum AddressShareChoice {
+    case Specific
+    case General
+}
