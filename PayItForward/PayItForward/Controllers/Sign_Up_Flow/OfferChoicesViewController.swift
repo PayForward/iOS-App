@@ -19,12 +19,14 @@ class OfferChoicesViewController: UIViewController {
         super.viewDidLoad()
         
         ref = FIRDatabase.database().reference()
-        ref.child("offerings").observe(.childAdded, with: { [weak self] snapshot in
+        ref.child("offerings").observe(.value, with: { [weak self] snapshot in
             guard let strongSelf = self else { return }
-            let title = snapshot.value as! String
-            strongSelf.tableView.beginUpdates()
-            strongSelf.offerings.append(title)
-            strongSelf.tableView.endUpdates()
+            for child in snapshot.children {
+                let childSnapshot = child as! FIRDataSnapshot
+                let title = childSnapshot.value as! String
+                strongSelf.offerings.append(title)
+            }
+            strongSelf.tableView.reloadData()
         })
     }
     
