@@ -24,7 +24,7 @@ class OfferChoicesViewController: UIViewController {
             let title = snapshot.value as! String
             strongSelf.tableView.beginUpdates()
             strongSelf.offerings.append(title)
-            strongSelf.tableView.endUpdates()()
+            strongSelf.tableView.endUpdates()
         })
     }
     
