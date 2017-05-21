@@ -10,8 +10,17 @@ import UIKit
 
 class TravelChoiceViewController: UIViewController {
 
+    var shareChoice: AddressShareChoice!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if shareChoice == .General {
+            // load random point in general vicinity
+        }
+        else {
+            // load exact address
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -20,6 +29,7 @@ class TravelChoiceViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*

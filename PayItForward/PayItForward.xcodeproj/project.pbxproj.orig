@@ -94,7 +94,12 @@
 		B26AB5291EBFE8F2009949E7 /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddressViewController.swift; path = PayItForward/Controllers/AddressViewController.swift; sourceTree = SOURCE_ROOT; };
 		B26AB52B1EBFF84A009949E7 /* ChooseCommunityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseCommunityViewController.swift; path = PayItForward/Controllers/ChooseCommunityViewController.swift; sourceTree = SOURCE_ROOT; };
 		B2952A9F1EBFFF4900F060C1 /* TermsOfServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TermsOfServiceViewController.swift; path = PayItForward/Controllers/TermsOfServiceViewController.swift; sourceTree = SOURCE_ROOT; };
+<<<<<<< HEAD
 		B2952AA11EC0031F00F060C1 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = CreateAccountViewController.swift; path = PayItForward/Controllers/CreateAccountViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+=======
+		B2952AA11EC0031F00F060C1 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateAccountViewController.swift; path = PayItForward/Controllers/CreateAccountViewController.swift; sourceTree = SOURCE_ROOT; };
+		B2B913761ED24AAF001293B5 /* OfferingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OfferingTableViewCell.swift; path = PayItForward/Views/OfferingTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+>>>>>>> d503d54f133e96afde76de275a2c890995c81666
 		D392D23A4CC15AC1BEDEE71E /* Pods-PayItForward.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayItForward.release.xcconfig"; path = "Pods/Target Support Files/Pods-PayItForward/Pods-PayItForward.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

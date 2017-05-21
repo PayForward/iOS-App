@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Tct-zq-tgc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Tct-zq-tgc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -633,6 +633,14 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
             </objects>
             <point key="canvasLocation" x="2168.8000000000002" y="-214.54272863568218"/>
         </scene>
+        <!--loginVC-->
+        <scene sceneID="Auw-Q7-mQ2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="loginVC" id="dOJ-hq-flP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sGQ-bu-J9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3182" y="589"/>
+        </scene>
         <!--Verify New Member View Controller-->
         <scene sceneID="AmK-Cm-NH5">
             <objects>
@@ -686,6 +694,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="next:" destination="VGl-6e-zKA" eventType="touchUpInside" id="1ew-uj-nd0"/>
+                                    <segue destination="dOJ-hq-flP" kind="show" id="4kE-Pv-egf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1636,6 +1645,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                                     <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="shareSpecificAddress:" destination="sgs-Rg-7MS" eventType="touchUpInside" id="ijz-bJ-cxv"/>
                                     <segue destination="ykO-s8-RGP" kind="show" id="WMq-Xo-B14"/>
                                 </connections>
                             </button>
@@ -1648,6 +1658,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                                     <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="shareGeneralVicinity:" destination="sgs-Rg-7MS" eventType="touchUpInside" id="Ywe-nV-K6w"/>
                                     <segue destination="ykO-s8-RGP" kind="show" id="z2q-iF-ZsH"/>
                                 </connections>
                             </button>

@@ -7,11 +7,11 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class VerifyNewMemberViewController: UIViewController {
     
     @IBOutlet weak var phoneNumberField: UITextField!
-    var verificationCode: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,18 +21,42 @@ class VerifyNewMemberViewController: UIViewController {
 
     @IBAction func next(_ sender: UIButton) {
         if phoneNumberIsValid() {
-            // launch twilio text messaging verification
+            // TODO: launch text messaging verification
+            
+            User.shared.phoneNum = self.phoneNumberField.text!
             print("valid phone number")
+            
+            if isNewUser() {
+                performSegue(withIdentifier: "toVerificationCode", sender: nil)
+            }
+            else {
+                let alertVC = UIAlertController(title: "You already have an account!", message: "Use your existing account to log in.", preferredStyle: .alert)
+                
+                let forgotPassword = UIAlertAction(title: "Forgot Password", style: .default) { (action) in
+                    // TODO: add Forgot password
+                }
+                let login = UIAlertAction(title: "Log In", style: .default) { (action) in
+                    self.performSegue(withIdentifier: "loginVC", sender: self)
+                }
+                
+                alertVC.addAction(forgotPassword)
+                alertVC.addAction(login)
+                
+                self.present(alertVC, animated: true, completion: nil)
+            }
+            
         }
         else {
-            let alertController = UIAlertController(title: "Invalid phone number", message: "Your phone number must have 10 digits.", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-            alertController.addAction(okAction)
+            let warningVC = createWarningAlert(withTitle: "Invalid phone number", message: "Your phone number must have 10 digits.")
             
-            self.present(alertController, animated: true, completion: nil)
+            self.present(warningVC, animated: true, completion: nil)
         }
+    }
+    
+    func isNewUser() -> Bool {
+        // TODO: perform search by phone number in firebase to find if new user
         
-        performSegue(withIdentifier: "toVerificationCode", sender: nil)
+        return true
     }
     
     func phoneNumberIsValid() -> Bool {
@@ -51,18 +75,6 @@ class VerifyNewMemberViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        let newVC = segue.destination as! VerificationCodeViewController
-        newVC.verificationCode = self.verificationCode
     }
     
 

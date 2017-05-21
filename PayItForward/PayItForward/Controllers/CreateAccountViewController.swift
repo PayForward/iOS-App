@@ -29,19 +29,14 @@ class CreateAccountViewController: UIViewController {
                 register(withEmail: self.emailField.text!, password: self.passwordField.text!)
             }
             else {
-                showLoginError(saying: "The password field is invalid.")
+                let warningVC = createWarningAlert(withTitle: "Uh oh!", message: "The password field is invalid")
+                self.present(warningVC, animated: true, completion: nil)
             }
         }
         else {
-            showLoginError(saying: "The email field is invalid.")
+            let warningVC = createWarningAlert(withTitle: "Uh oh!", message: "The email field is invalid")
+            self.present(warningVC, animated: true, completion: nil)
         }
-    }
-    
-    func showLoginError(saying message: String) {
-        let alertController = UIAlertController(title: "Uh Oh!", message: message, preferredStyle: .alert)
-        alertController.addAction(.init(title: "OK", style: .default, handler: nil))
-        
-        self.present(alertController, animated: true, completion: nil)
     }
     
     func emailIsValid() -> Bool {
