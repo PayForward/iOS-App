@@ -73,6 +73,7 @@ class CreateAccountViewController: UIViewController {
                 print(user)
             }
             
+            User.shared.email = email
             self.performSegue(withIdentifier: "toVerify", sender: self)
         }
     }

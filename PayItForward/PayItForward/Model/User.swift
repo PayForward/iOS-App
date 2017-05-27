@@ -12,6 +12,7 @@ class User {
     static let shared = User()
     
     var uid: String!
+    var email: String!
     var firstName: String!
     var lastName: String!
     var phoneNum: String?

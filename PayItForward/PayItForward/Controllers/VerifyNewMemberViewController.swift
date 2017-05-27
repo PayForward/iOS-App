@@ -32,14 +32,10 @@ class VerifyNewMemberViewController: UIViewController {
             else {
                 let alertVC = UIAlertController(title: "You already have an account!", message: "Use your existing account to log in.", preferredStyle: .alert)
                 
-                let forgotPassword = UIAlertAction(title: "Forgot Password", style: .default) { (action) in
-                    // TODO: add Forgot password
-                }
                 let login = UIAlertAction(title: "Log In", style: .default) { (action) in
                     self.performSegue(withIdentifier: "loginVC", sender: self)
                 }
                 
-                alertVC.addAction(forgotPassword)
                 alertVC.addAction(login)
                 
                 self.present(alertVC, animated: true, completion: nil)
