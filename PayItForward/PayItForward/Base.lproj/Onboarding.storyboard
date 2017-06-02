@@ -1028,7 +1028,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
             </objects>
             <point key="canvasLocation" x="5332" y="-214.54272863568218"/>
         </scene>
-        <!--Title-->
+        <!--Upload Image View Controller-->
         <scene sceneID="mPR-98-6bm">
             <objects>
                 <viewController id="onj-54-zfU" customClass="UploadImageViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
@@ -1048,14 +1048,14 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload a Recent Photo of Yourself" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cub-5x-8xI">
                                 <rect key="frame" x="16" y="82" width="343" height="91"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="91" id="JNd-4N-tMc"/>
+                                    <constraint firstAttribute="height" constant="91" id="hAp-uP-dBA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBC-Ow-LlE">
-                                <rect key="frame" x="0.0" y="227" width="375" height="1239"/>
+                                <rect key="frame" x="0.0" y="427" width="375" height="1039"/>
                                 <state key="normal" image="UploadImage"/>
                                 <connections>
                                     <action selector="uploadImage:" destination="onj-54-zfU" eventType="touchUpInside" id="xwl-p6-lVz"/>
@@ -1064,8 +1064,8 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoA-Q2-FQU">
                                 <rect key="frame" x="313" y="1550" width="46" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="kAu-Lz-WfA"/>
-                                    <constraint firstAttribute="height" constant="30" id="s2a-dD-1FW"/>
+                                    <constraint firstAttribute="width" constant="46" id="PVn-0Y-T05"/>
+                                    <constraint firstAttribute="height" constant="30" id="fAw-3o-78c"/>
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
@@ -1073,25 +1073,34 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                                     <segue destination="mx3-Jw-9YQ" kind="show" identifier="toTitle" id="vLx-S7-0x7"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="81A-Wo-G1z">
+                                <rect key="frame" x="87" y="181" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="5LR-az-AgZ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.96875399351119995" green="0.96095770597457886" blue="0.95240873098373413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="005-z2-4zg" firstAttribute="top" secondItem="OY7-ZH-AhH" secondAttribute="bottom" constant="8" symbolic="YES" id="0rp-Vk-se8"/>
-                            <constraint firstItem="Cub-5x-8xI" firstAttribute="top" secondItem="005-z2-4zg" secondAttribute="bottom" constant="8" symbolic="YES" id="6Yu-Lc-PvC"/>
-                            <constraint firstItem="QoA-Q2-FQU" firstAttribute="top" secondItem="rBC-Ow-LlE" secondAttribute="bottom" constant="84" id="B3a-EH-Dfg"/>
-                            <constraint firstAttribute="bottom" secondItem="QoA-Q2-FQU" secondAttribute="bottom" constant="20" symbolic="YES" id="RwO-ky-Ko6"/>
-                            <constraint firstItem="Cub-5x-8xI" firstAttribute="centerX" secondItem="rBC-Ow-LlE" secondAttribute="centerX" id="XI3-sK-Q2W"/>
-                            <constraint firstItem="rBC-Ow-LlE" firstAttribute="leading" secondItem="Vcz-JI-MCj" secondAttribute="leading" id="bz4-ca-7vr"/>
-                            <constraint firstItem="005-z2-4zg" firstAttribute="trailing" secondItem="Cub-5x-8xI" secondAttribute="trailing" id="fKb-FZ-wmU"/>
-                            <constraint firstItem="005-z2-4zg" firstAttribute="leading" secondItem="Cub-5x-8xI" secondAttribute="leading" id="o52-kK-Wqo"/>
-                            <constraint firstItem="rBC-Ow-LlE" firstAttribute="top" secondItem="Cub-5x-8xI" secondAttribute="bottom" constant="54" id="oeH-vP-iJe"/>
-                            <constraint firstItem="Cub-5x-8xI" firstAttribute="trailing" secondItem="QoA-Q2-FQU" secondAttribute="trailing" id="p6m-M2-LJF"/>
-                            <constraint firstItem="005-z2-4zg" firstAttribute="leading" secondItem="Vcz-JI-MCj" secondAttribute="leadingMargin" id="uew-64-IhO"/>
-                            <constraint firstAttribute="trailing" secondItem="rBC-Ow-LlE" secondAttribute="trailing" id="z8N-CX-xwh"/>
+                            <constraint firstItem="005-z2-4zg" firstAttribute="leading" secondItem="Vcz-JI-MCj" secondAttribute="leadingMargin" id="1n0-km-HQN"/>
+                            <constraint firstItem="QoA-Q2-FQU" firstAttribute="top" secondItem="rBC-Ow-LlE" secondAttribute="bottom" constant="84" id="Ih6-tE-i6s"/>
+                            <constraint firstItem="81A-Wo-G1z" firstAttribute="leading" secondItem="Vcz-JI-MCj" secondAttribute="leadingMargin" constant="71" id="JG6-WG-4Ch"/>
+                            <constraint firstItem="Cub-5x-8xI" firstAttribute="trailing" secondItem="QoA-Q2-FQU" secondAttribute="trailing" id="MYM-o4-blw"/>
+                            <constraint firstItem="rBC-Ow-LlE" firstAttribute="leading" secondItem="Vcz-JI-MCj" secondAttribute="leading" id="NqI-6o-cFZ"/>
+                            <constraint firstAttribute="trailing" secondItem="rBC-Ow-LlE" secondAttribute="trailing" id="S3V-VM-Pyz"/>
+                            <constraint firstItem="005-z2-4zg" firstAttribute="top" secondItem="OY7-ZH-AhH" secondAttribute="bottom" constant="8" symbolic="YES" id="VF5-vz-zSe"/>
+                            <constraint firstItem="005-z2-4zg" firstAttribute="leading" secondItem="Cub-5x-8xI" secondAttribute="leading" id="eiv-Em-2Vv"/>
+                            <constraint firstItem="81A-Wo-G1z" firstAttribute="top" secondItem="Cub-5x-8xI" secondAttribute="bottom" constant="8" symbolic="YES" id="f7z-go-7s2"/>
+                            <constraint firstItem="81A-Wo-G1z" firstAttribute="centerX" secondItem="rBC-Ow-LlE" secondAttribute="centerX" id="mXa-Ne-ywU"/>
+                            <constraint firstItem="rBC-Ow-LlE" firstAttribute="top" secondItem="81A-Wo-G1z" secondAttribute="bottom" constant="46" id="p4Z-nz-ARd"/>
+                            <constraint firstAttribute="bottom" secondItem="QoA-Q2-FQU" secondAttribute="bottom" constant="20" symbolic="YES" id="vOT-cC-hjR"/>
+                            <constraint firstItem="Cub-5x-8xI" firstAttribute="centerX" secondItem="81A-Wo-G1z" secondAttribute="centerX" id="w2g-rt-s9S"/>
+                            <constraint firstItem="005-z2-4zg" firstAttribute="trailing" secondItem="Cub-5x-8xI" secondAttribute="trailing" id="xy0-d7-7Gl"/>
+                            <constraint firstItem="Cub-5x-8xI" firstAttribute="top" secondItem="005-z2-4zg" secondAttribute="bottom" constant="8" symbolic="YES" id="yzI-Fh-OCk"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Title" id="a7v-bK-CLJ">
+                    <navigationItem key="navigationItem" id="a7v-bK-CLJ">
                         <barButtonItem key="rightBarButtonItem" title="Skip" id="b6J-8h-7Dk">
                             <connections>
                                 <segue destination="mx3-Jw-9YQ" kind="show" id="Jjq-bz-gaa"/>
@@ -1099,6 +1108,9 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="chosenImageView" destination="81A-Wo-G1z" id="LML-7B-GLL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfr-8Q-iJY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1171,6 +1183,9 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                                 <state key="normal" title="   Create your Own Offer">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="6GG-Up-PCN" kind="show" id="ebv-XC-rYT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96875399350000002" green="0.96095770599999997" blue="0.95240873100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1348,7 +1363,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
         <!--Title-->
         <scene sceneID="iut-hl-8ce">
             <objects>
-                <viewController id="OEf-jb-kAb" sceneMemberID="viewController">
+                <viewController id="OEf-jb-kAb" customClass="PostTitleViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jeH-D8-c8U"/>
                         <viewControllerLayoutGuide type="bottom" id="fTq-yw-m5K"/>
@@ -1388,6 +1403,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
+                                    <action selector="next:" destination="OEf-jb-kAb" eventType="touchUpInside" id="oyJ-pf-8sP"/>
                                     <segue destination="7bP-MU-82O" kind="show" id="1nv-yO-B7q"/>
                                 </connections>
                             </button>
@@ -1414,6 +1430,9 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="titleTextField" destination="KzX-xg-A1i" id="8LF-3L-KiD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="feO-UQ-pRy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1422,7 +1441,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
         <!--Title-->
         <scene sceneID="tuc-00-CFz">
             <objects>
-                <viewController id="7bP-MU-82O" sceneMemberID="viewController">
+                <viewController id="7bP-MU-82O" customClass="DescribePostViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V2B-42-r0A"/>
                         <viewControllerLayoutGuide type="bottom" id="X98-fX-j2Y"/>
@@ -1474,6 +1493,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                                 <rect key="frame" x="320" y="1550" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
+                                    <action selector="next:" destination="7bP-MU-82O" eventType="touchUpInside" id="4jM-Mr-mi4"/>
                                     <segue destination="u3d-4P-qIl" kind="show" id="Je1-sW-RVR"/>
                                 </connections>
                             </button>
@@ -1507,6 +1527,9 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="rhH-nA-dl0" id="ms4-Tm-IVb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cO-vB-DM2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1515,7 +1538,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
         <!--Title-->
         <scene sceneID="mOl-hv-6dR">
             <objects>
-                <viewController id="u3d-4P-qIl" sceneMemberID="viewController">
+                <viewController id="u3d-4P-qIl" customClass="UploadOfferImagesViewController" customModule="PayItForward" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kVd-fY-853"/>
                         <viewControllerLayoutGuide type="bottom" id="0wO-pA-qRf"/>
@@ -1530,43 +1553,84 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                                 <color key="trackTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g63-To-8CE">
-                                <rect key="frame" x="-2" y="173" width="377" height="1357"/>
+                                <rect key="frame" x="0.0" y="435" width="375" height="1095"/>
                                 <state key="normal" image="UploadImage"/>
+                                <connections>
+                                    <action selector="choseImages:" destination="u3d-4P-qIl" eventType="touchUpInside" id="ERC-SO-jOO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1m0-Tg-QAa">
                                 <rect key="frame" x="320" y="1550" width="32" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="wnf-ZA-lCP"/>
+                                    <constraint firstAttribute="height" constant="30" id="wBp-2e-uhg"/>
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
+                                    <action selector="next:" destination="u3d-4P-qIl" eventType="touchUpInside" id="vdA-XX-H8c"/>
                                     <segue destination="sgs-Rg-7MS" kind="show" id="CgG-um-0fv"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Image(s) of your Offer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBb-tE-BS5">
-                                <rect key="frame" x="68" y="82" width="236" height="83"/>
+                                <rect key="frame" x="68" y="82" width="237" height="83"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="83" id="Wll-t3-ST8"/>
+                                    <constraint firstAttribute="height" constant="83" id="g6P-IT-Tzm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pqh-Kh-j00">
+                                <rect key="frame" x="16" y="173" width="340" height="225"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="RYt-7l-3oI"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WN6-l6-j7W">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XL2-jw-f09">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SpF-84-PLq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="SpF-84-PLq" secondAttribute="bottom" id="EcS-XR-36Z"/>
+                                            <constraint firstItem="SpF-84-PLq" firstAttribute="top" secondItem="XL2-jw-f09" secondAttribute="top" id="X4p-eI-Dub"/>
+                                            <constraint firstAttribute="trailing" secondItem="SpF-84-PLq" secondAttribute="trailing" id="rNf-I2-cJc"/>
+                                            <constraint firstItem="SpF-84-PLq" firstAttribute="leading" secondItem="XL2-jw-f09" secondAttribute="leading" id="sv5-uG-VY9"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.96875399350000002" green="0.96095770599999997" blue="0.95240873100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hFA-1X-X8l" firstAttribute="trailing" secondItem="JmU-Ul-wNR" secondAttribute="trailingMargin" id="9qe-f1-Z1s"/>
-                            <constraint firstItem="hFA-1X-X8l" firstAttribute="top" secondItem="kVd-fY-853" secondAttribute="bottom" constant="8" symbolic="YES" id="CnX-Za-xrv"/>
-                            <constraint firstItem="lBb-tE-BS5" firstAttribute="centerX" secondItem="g63-To-8CE" secondAttribute="centerX" id="D45-tK-wW5"/>
-                            <constraint firstItem="hFA-1X-X8l" firstAttribute="leading" secondItem="JmU-Ul-wNR" secondAttribute="leadingMargin" id="Dwb-CC-XGG"/>
-                            <constraint firstAttribute="trailing" secondItem="g63-To-8CE" secondAttribute="trailing" id="LaO-m4-Nf2"/>
-                            <constraint firstItem="lBb-tE-BS5" firstAttribute="top" secondItem="hFA-1X-X8l" secondAttribute="bottom" constant="8" symbolic="YES" id="OTo-Sr-AOU"/>
-                            <constraint firstAttribute="bottom" secondItem="1m0-Tg-QAa" secondAttribute="bottom" constant="20" symbolic="YES" id="Phc-lr-YQF"/>
-                            <constraint firstItem="lBb-tE-BS5" firstAttribute="leading" secondItem="JmU-Ul-wNR" secondAttribute="leadingMargin" constant="52" id="Y5P-Ah-HSj"/>
-                            <constraint firstItem="g63-To-8CE" firstAttribute="top" secondItem="lBb-tE-BS5" secondAttribute="bottom" constant="8" symbolic="YES" id="aEq-lE-bUL"/>
-                            <constraint firstItem="g63-To-8CE" firstAttribute="leading" secondItem="JmU-Ul-wNR" secondAttribute="leadingMargin" constant="-18" id="bsR-8d-eZn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1m0-Tg-QAa" secondAttribute="trailing" constant="7" id="fgD-hV-Oml"/>
-                            <constraint firstItem="1m0-Tg-QAa" firstAttribute="top" secondItem="g63-To-8CE" secondAttribute="bottom" constant="20" id="hds-Qp-QFA"/>
+                            <constraint firstItem="g63-To-8CE" firstAttribute="top" secondItem="pqh-Kh-j00" secondAttribute="bottom" constant="37" id="16a-dC-wbd"/>
+                            <constraint firstItem="hFA-1X-X8l" firstAttribute="leading" secondItem="JmU-Ul-wNR" secondAttribute="leadingMargin" id="4PZ-Ru-zxt"/>
+                            <constraint firstItem="1m0-Tg-QAa" firstAttribute="top" secondItem="g63-To-8CE" secondAttribute="bottom" constant="20" id="4vr-aY-r7b"/>
+                            <constraint firstItem="hFA-1X-X8l" firstAttribute="leading" secondItem="pqh-Kh-j00" secondAttribute="leading" id="6nn-Oz-fnX"/>
+                            <constraint firstItem="lBb-tE-BS5" firstAttribute="leading" secondItem="JmU-Ul-wNR" secondAttribute="leadingMargin" constant="52" id="Ctj-uJ-9Zc"/>
+                            <constraint firstItem="g63-To-8CE" firstAttribute="leading" secondItem="JmU-Ul-wNR" secondAttribute="leading" id="FMg-pY-wNh"/>
+                            <constraint firstItem="hFA-1X-X8l" firstAttribute="centerX" secondItem="g63-To-8CE" secondAttribute="centerX" id="TTT-JN-Tzg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pqh-Kh-j00" secondAttribute="trailing" constant="3" id="WN3-gi-1Ex"/>
+                            <constraint firstAttribute="trailing" secondItem="g63-To-8CE" secondAttribute="trailing" id="Zxl-7R-YYB"/>
+                            <constraint firstItem="lBb-tE-BS5" firstAttribute="top" secondItem="hFA-1X-X8l" secondAttribute="bottom" constant="8" symbolic="YES" id="dJc-3G-Suz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1m0-Tg-QAa" secondAttribute="trailing" constant="7" id="fWb-Yn-pqU"/>
+                            <constraint firstAttribute="bottom" secondItem="1m0-Tg-QAa" secondAttribute="bottom" constant="20" symbolic="YES" id="hun-cg-Qvt"/>
+                            <constraint firstItem="hFA-1X-X8l" firstAttribute="top" secondItem="kVd-fY-853" secondAttribute="bottom" constant="8" symbolic="YES" id="lUT-qU-WUQ"/>
+                            <constraint firstItem="lBb-tE-BS5" firstAttribute="centerX" secondItem="pqh-Kh-j00" secondAttribute="centerX" id="wIt-FF-ebW"/>
+                            <constraint firstItem="pqh-Kh-j00" firstAttribute="top" secondItem="lBb-tE-BS5" secondAttribute="bottom" constant="8" symbolic="YES" id="wn0-Nw-JbP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="2uE-As-LrE">
@@ -1576,10 +1640,13 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="chosenImagesCollectionView" destination="pqh-Kh-j00" id="8DQ-bv-WE5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uum-q8-M8R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10607.200000000001" y="-201.04947526236884"/>
+            <point key="canvasLocation" x="10607.200000000001" y="-201.49925037481262"/>
         </scene>
         <!--Title-->
         <scene sceneID="COi-wd-ulf">
@@ -2326,20 +2393,20 @@ In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum fe
         <image name="UploadImage" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Vbd-sM-IK2"/>
+        <segue reference="Je1-sW-RVR"/>
+        <segue reference="d0J-us-zge"/>
+        <segue reference="QNI-Rl-XLT"/>
+        <segue reference="ecg-JH-xut"/>
+        <segue reference="sNb-mg-sZD"/>
+        <segue reference="vLx-S7-0x7"/>
+        <segue reference="m3R-hB-Zjo"/>
+        <segue reference="w7T-PL-jYw"/>
+        <segue reference="VlU-Ue-uZc"/>
+        <segue reference="xRu-oi-NDe"/>
+        <segue reference="eRg-kz-Act"/>
         <segue reference="UYv-sk-fjK"/>
         <segue reference="bnM-Ep-feT"/>
-        <segue reference="eRg-kz-Act"/>
-        <segue reference="xRu-oi-NDe"/>
-        <segue reference="VlU-Ue-uZc"/>
-        <segue reference="w7T-PL-jYw"/>
-        <segue reference="m3R-hB-Zjo"/>
-        <segue reference="vLx-S7-0x7"/>
-        <segue reference="sNb-mg-sZD"/>
-        <segue reference="ecg-JH-xut"/>
-        <segue reference="QNI-Rl-XLT"/>
-        <segue reference="d0J-us-zge"/>
-        <segue reference="Je1-sW-RVR"/>
-        <segue reference="Vbd-sM-IK2"/>
         <segue reference="z2q-iF-ZsH"/>
         <segue reference="o58-Yw-JfG"/>
         <segue reference="gjj-fv-AR3"/>

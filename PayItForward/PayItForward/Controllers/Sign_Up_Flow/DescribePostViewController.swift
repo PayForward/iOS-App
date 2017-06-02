@@ -1,28 +1,27 @@
 //
-//  AboutViewController.swift
+//  DescribePostViewController.swift
 //  PayItForward
 //
-//  Created by Jonathan Abercrombie on 5/7/17.
+//  Created by Pankaj Khillon on 5/26/17.
 //  Copyright © 2017 PayItFoward. All rights reserved.
 //
 
 import UIKit
 
-class AboutViewController: UIViewController {
-
-    @IBOutlet weak var aboutTextView: UITextView!
+class DescribePostViewController: UIViewController {
     
+    var post: Post!
+
+    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBAction func next(_ sender: Any) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func next(_ sender: UIButton) {
-        User.shared.bio = self.aboutTextView.text
-        performSegue(withIdentifier: "toPhoto", sender: nil)
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

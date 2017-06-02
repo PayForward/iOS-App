@@ -15,7 +15,8 @@ class User {
     var email: String!
     var firstName: String!
     var lastName: String!
-    var phoneNum: String?
+    var phoneNum: String!
+    var bio: String!
     var communities = [String]() // cid
     var points: Int!
     var posts = [String]()       // can then load later from pid

@@ -16,6 +16,19 @@ func createWarningAlert(withTitle title: String, message: String) -> UIViewContr
     return alertController
 }
 
+func scale(image: UIImage, toWidth width: CGFloat) -> UIImage? {
+    let scaleFactor = width / image.size.width
+    let newImageHeight = image.size.height * scaleFactor
+    
+    UIGraphicsBeginImageContext(CGSize(width: width, height: newImageHeight))
+    image.draw(in: CGRect(x: 0, y: 0, width: width, height: newImageHeight))
+    
+    let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+    
+    return scaledImage
+}
+
 enum AddressShareChoice {
     case Specific
     case General

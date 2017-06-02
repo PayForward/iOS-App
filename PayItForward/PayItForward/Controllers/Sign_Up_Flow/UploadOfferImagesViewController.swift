@@ -1,21 +1,23 @@
 //
-//  UploadImageViewController.swift
+//  UploadOfferImagesViewController.swift
 //  PayItForward
 //
-//  Created by Pankaj Khillon on 5/14/17.
+//  Created by Pankaj Khillon on 6/1/17.
 //  Copyright © 2017 PayItFoward. All rights reserved.
 //
 
 import UIKit
 import FirebaseStorage
 
-class UploadImageViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+class UploadOfferImagesViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
     
     let imagePickerController = UIImagePickerController()
     var chosenImage: UIImage!
-
-    @IBOutlet weak var chosenImageView: UIImageView!
-    @IBAction func uploadImage(_ sender: Any) {
+    
+    @IBOutlet weak var chosenImagesCollectionView: UICollectionView!
+    
+    @IBAction func choseImages(_ sender: Any) {
         let actionSheet = UIAlertController(title: "Choose image source", message: nil, preferredStyle: .actionSheet)
         
         let cameraAction = UIAlertAction(title: "Take a photo", style: .default) { (action) in
@@ -41,6 +43,10 @@ class UploadImageViewController: UIViewController, UIImagePickerControllerDelega
         self.present(actionSheet, animated: true, completion: nil)
     }
     
+    @IBAction func next(_ sender: Any) {
+    }
+    
+    // TODO: Import custom image picker view
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             self.chosenImage = pickedImage
@@ -67,7 +73,7 @@ class UploadImageViewController: UIViewController, UIImagePickerControllerDelega
                 
             }
         }
-
+        
         
         self.dismiss(animated: true, completion: nil)
     }
@@ -80,5 +86,21 @@ class UploadImageViewController: UIViewController, UIImagePickerControllerDelega
         super.viewDidLoad()
         self.imagePickerController.delegate = self
     }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }

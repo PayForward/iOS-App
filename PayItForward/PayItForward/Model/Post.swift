@@ -14,7 +14,7 @@ enum PostType {
     case offer
 }
 
-class Post {
+class Post {    
     var title: String!
     var userFirstName: String!
     var userProfileImage: UIImage!

@@ -23,7 +23,10 @@
 		2890B02E1EAABAEF00886C82 /* SecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890B02D1EAABAEF00886C82 /* SecondPageViewController.swift */; };
 		2890B0301EAABAF900886C82 /* ThirdPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890B02F1EAABAF900886C82 /* ThirdPageViewController.swift */; };
 		2890B0321EAAC43700886C82 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890B0311EAAC43700886C82 /* IntroViewController.swift */; };
+		28973A631EE1279600CE9C04 /* UploadOfferImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28973A621EE1279600CE9C04 /* UploadOfferImagesViewController.swift */; };
 		28ADA74C1ED92A3600C8B3AB /* OfferingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ADA74B1ED92A3600C8B3AB /* OfferingTableViewCell.swift */; };
+		28ADA74E1ED93AE600C8B3AB /* PostTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ADA74D1ED93AE600C8B3AB /* PostTitleViewController.swift */; };
+		28ADA7501ED9421B00C8B3AB /* DescribePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ADA74F1ED9421B00C8B3AB /* DescribePostViewController.swift */; };
 		28BC54E81EBFF6FD00A7E16E /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BC54E71EBFF6FD00A7E16E /* CustomColors.swift */; };
 		28D2E4BD1ECCD5D400FC98E2 /* OfferChoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D2E4BC1ECCD5D400FC98E2 /* OfferChoicesViewController.swift */; };
 		28D2E4BF1ECD389100FC98E2 /* SetLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D2E4BE1ECD389100FC98E2 /* SetLocationViewController.swift */; };
@@ -71,7 +74,10 @@
 		2890B02D1EAABAEF00886C82 /* SecondPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPageViewController.swift; sourceTree = "<group>"; };
 		2890B02F1EAABAF900886C82 /* ThirdPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdPageViewController.swift; sourceTree = "<group>"; };
 		2890B0311EAAC43700886C82 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		28973A621EE1279600CE9C04 /* UploadOfferImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadOfferImagesViewController.swift; sourceTree = "<group>"; };
 		28ADA74B1ED92A3600C8B3AB /* OfferingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferingTableViewCell.swift; sourceTree = "<group>"; };
+		28ADA74D1ED93AE600C8B3AB /* PostTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTitleViewController.swift; sourceTree = "<group>"; };
+		28ADA74F1ED9421B00C8B3AB /* DescribePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescribePostViewController.swift; sourceTree = "<group>"; };
 		28BC54E71EBFF6FD00A7E16E /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		28D2E4BC1ECCD5D400FC98E2 /* OfferChoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferChoicesViewController.swift; sourceTree = "<group>"; };
 		28D2E4BE1ECD389100FC98E2 /* SetLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetLocationViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +203,9 @@
 				28D2E4C01ECD38B000FC98E2 /* TravelChoiceViewController.swift */,
 				28D2E4C21ECD38CE00FC98E2 /* ChargePointsViewController.swift */,
 				28D2E4C41ECD38E600FC98E2 /* PreviewPostViewController.swift */,
+				28ADA74D1ED93AE600C8B3AB /* PostTitleViewController.swift */,
+				28ADA74F1ED9421B00C8B3AB /* DescribePostViewController.swift */,
+				28973A621EE1279600CE9C04 /* UploadOfferImagesViewController.swift */,
 			);
 			path = Sign_Up_Flow;
 			sourceTree = "<group>";
@@ -378,12 +387,15 @@
 				B2B913771ED24AAF001293B5 /* (null) in Sources */,
 				B252670A1EAA9CF700E0C02E /* Post.swift in Sources */,
 				28BC54E81EBFF6FD00A7E16E /* CustomColors.swift in Sources */,
+				28ADA7501ED9421B00C8B3AB /* DescribePostViewController.swift in Sources */,
 				2890B0281EAAAB7D00886C82 /* User.swift in Sources */,
+				28ADA74E1ED93AE600C8B3AB /* PostTitleViewController.swift in Sources */,
 				B2952AA21EC0031F00F060C1 /* CreateAccountViewController.swift in Sources */,
 				2890B0321EAAC43700886C82 /* IntroViewController.swift in Sources */,
 				28D2E4BF1ECD389100FC98E2 /* SetLocationViewController.swift in Sources */,
 				B2952AA01EBFFF4900F060C1 /* TermsOfServiceViewController.swift in Sources */,
 				B26AB52C1EBFF84A009949E7 /* ChooseCommunityViewController.swift in Sources */,
+				28973A631EE1279600CE9C04 /* UploadOfferImagesViewController.swift in Sources */,
 				28F4596B1EC87BEE0043B9BA /* UploadImageViewController.swift in Sources */,
 				28D2E4C51ECD38E600FC98E2 /* PreviewPostViewController.swift in Sources */,
 				B23C44181EC006F200950957 /* NameViewController.swift in Sources */,
