@@ -12,5 +12,7 @@ target 'PayItForward' do
   pod 'Firebase/Crash'
   pod 'Firebase/Database'
   pod 'FacebookLogin'
+  pod 'DKImagePickerController'
+  pod 'DKCamera' 
 
 end
