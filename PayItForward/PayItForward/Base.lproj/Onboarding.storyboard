@@ -1070,6 +1070,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="next:" destination="JBd-CK-3g3" eventType="touchUpInside" id="MfT-Tl-PyG"/>
+                                    <action selector="next:" destination="onj-54-zfU" eventType="touchUpInside" id="NMl-xh-3fS"/>
                                     <segue destination="mx3-Jw-9YQ" kind="show" identifier="toTitle" id="vLx-S7-0x7"/>
                                 </connections>
                             </button>
@@ -1592,7 +1593,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XL2-jw-f09">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XL2-jw-f09" customClass="ImageCollectionViewCell" customModule="PayItForward" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1610,6 +1611,9 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                                             <constraint firstAttribute="trailing" secondItem="SpF-84-PLq" secondAttribute="trailing" id="rNf-I2-cJc"/>
                                             <constraint firstItem="SpF-84-PLq" firstAttribute="leading" secondItem="XL2-jw-f09" secondAttribute="leading" id="sv5-uG-VY9"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="SpF-84-PLq" id="ipI-qJ-FaG"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

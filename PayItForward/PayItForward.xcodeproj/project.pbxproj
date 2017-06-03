@@ -24,6 +24,7 @@
 		2890B0301EAABAF900886C82 /* ThirdPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890B02F1EAABAF900886C82 /* ThirdPageViewController.swift */; };
 		2890B0321EAAC43700886C82 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2890B0311EAAC43700886C82 /* IntroViewController.swift */; };
 		28973A631EE1279600CE9C04 /* UploadOfferImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28973A621EE1279600CE9C04 /* UploadOfferImagesViewController.swift */; };
+		28973A651EE26CD400CE9C04 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28973A641EE26CD400CE9C04 /* ImageCollectionViewCell.swift */; };
 		28ADA74C1ED92A3600C8B3AB /* OfferingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ADA74B1ED92A3600C8B3AB /* OfferingTableViewCell.swift */; };
 		28ADA74E1ED93AE600C8B3AB /* PostTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ADA74D1ED93AE600C8B3AB /* PostTitleViewController.swift */; };
 		28ADA7501ED9421B00C8B3AB /* DescribePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ADA74F1ED9421B00C8B3AB /* DescribePostViewController.swift */; };
@@ -75,6 +76,7 @@
 		2890B02F1EAABAF900886C82 /* ThirdPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdPageViewController.swift; sourceTree = "<group>"; };
 		2890B0311EAAC43700886C82 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		28973A621EE1279600CE9C04 /* UploadOfferImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadOfferImagesViewController.swift; sourceTree = "<group>"; };
+		28973A641EE26CD400CE9C04 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		28ADA74B1ED92A3600C8B3AB /* OfferingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferingTableViewCell.swift; sourceTree = "<group>"; };
 		28ADA74D1ED93AE600C8B3AB /* PostTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTitleViewController.swift; sourceTree = "<group>"; };
 		28ADA74F1ED9421B00C8B3AB /* DescribePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescribePostViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				28ADA74B1ED92A3600C8B3AB /* OfferingTableViewCell.swift */,
 				28BC54E71EBFF6FD00A7E16E /* CustomColors.swift */,
 				2887679A1EA425630052A76D /* PostTableViewCell.swift */,
+				28973A641EE26CD400CE9C04 /* ImageCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				288767951EA41DC60052A76D /* MessagesViewController.swift in Sources */,
 				2890B02C1EAABAE600886C82 /* FirstPageViewController.swift in Sources */,
 				B26AB52A1EBFE8F2009949E7 /* AddressViewController.swift in Sources */,
+				28973A651EE26CD400CE9C04 /* ImageCollectionViewCell.swift in Sources */,
 				28D2E4BD1ECCD5D400FC98E2 /* OfferChoicesViewController.swift in Sources */,
 				2890B02A1EAABAB700886C82 /* PageContainerViewController.swift in Sources */,
 				28791B3D1ED239D500DA4881 /* Globals.swift in Sources */,

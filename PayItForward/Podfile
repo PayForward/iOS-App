@@ -13,6 +13,6 @@ target 'PayItForward' do
   pod 'Firebase/Database'
   pod 'FacebookLogin'
   pod 'DKImagePickerController'
-  pod 'DKCamera' 
-
+  pod 'DKCamera'
+  pod 'SwiftSpinner'
 end

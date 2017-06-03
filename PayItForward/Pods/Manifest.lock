@@ -75,6 +75,7 @@ PODS:
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.9)
   - Protobuf (3.2.1)
+  - SwiftSpinner (1.2.1)
 
 DEPENDENCIES:
   - DKCamera
@@ -85,6 +86,7 @@ DEPENDENCIES:
   - Firebase/Crash
   - Firebase/Database
   - Firebase/Storage
+  - SwiftSpinner
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -105,7 +107,8 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
   Protobuf: 2ccbaf193f6c65adc67745453ca0c13234c32796
+  SwiftSpinner: 62a28bbb4035f252a1e91b0e17fc40bdbbfa0aab
 
-PODFILE CHECKSUM: 1a814e6e15f236b7c03c6216d04b5d4184b2efc1
+PODFILE CHECKSUM: 615275e1fcdd859f3cfd1bf13206ca4d50d6fb8f
 
 COCOAPODS: 1.2.1
