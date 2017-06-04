@@ -12,7 +12,7 @@ import Photos
 import DKImagePickerController
 import SwiftSpinner
 
-class UploadOfferImagesViewController: UIViewController {
+class UploadOfferImagesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     var chosenImages = [UIImage]()
     
@@ -68,6 +68,21 @@ class UploadOfferImagesViewController: UIViewController {
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! ImageCollectionViewCell
+        
+        cell.imageView.image = self.chosenImages[indexPath.row]
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.chosenImages.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        return false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.chosenImagesCollectionView.dataSource = self
@@ -83,24 +98,4 @@ class UploadOfferImagesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-}
-
-extension UploadOfferImagesViewController: UICollectionViewDataSource {
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! ImageCollectionViewCell
-        
-        cell.imageView.image = self.chosenImages[indexPath.row]
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.chosenImages.count
-    }
-}
-
-extension UploadOfferImagesViewController: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
 }
