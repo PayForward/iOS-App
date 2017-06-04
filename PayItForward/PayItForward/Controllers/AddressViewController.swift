@@ -15,6 +15,7 @@ class AddressViewController: UIViewController {
     @IBOutlet weak var addressField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var currentLocButton: UIButton!
+    
     var locationManager:CLLocationManager?
     var currentLocation:CLLocation?
     var usedLocationFinder = false
@@ -24,7 +25,7 @@ class AddressViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         locationManager = CLLocationManager()
         locationManager?.delegate = self
         locationManager?.startUpdatingLocation()
@@ -77,7 +78,8 @@ class AddressViewController: UIViewController {
         }
     }
     
-    // ERROR: this doesn't work right either :/
+    // TODO: this doesn't work right either :/
+    // TODO: Google maps autocomplete
     /// Checks if zip code is within SLO
     func zipCodeIsValid() -> Bool {
 //        for zip in sloZipCodes {
@@ -89,7 +91,7 @@ class AddressViewController: UIViewController {
         return true
     }
     
-    // ERROR: THIS DOESN'T WORK YET.
+    // TODO: THIS DOESN'T WORK YET.
     /// User inputs their addresss
     func getLocation(from address: String) {
         CLGeocoder().geocodeAddressString(address) { (placemarks, error) in

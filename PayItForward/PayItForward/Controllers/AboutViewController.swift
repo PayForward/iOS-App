@@ -17,6 +17,7 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.aboutTextView.delegate = self
+        
     }
 
     @IBAction func next(_ sender: UIButton) {

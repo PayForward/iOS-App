@@ -29,6 +29,8 @@
 		28ADA74E1ED93AE600C8B3AB /* PostTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ADA74D1ED93AE600C8B3AB /* PostTitleViewController.swift */; };
 		28ADA7501ED9421B00C8B3AB /* DescribePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ADA74F1ED9421B00C8B3AB /* DescribePostViewController.swift */; };
 		28BC54E81EBFF6FD00A7E16E /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BC54E71EBFF6FD00A7E16E /* CustomColors.swift */; };
+		28BF03021EE4BFE000D88AF7 /* PFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BF03011EE4BFE000D88AF7 /* PFTextField.swift */; };
+		28BF03041EE4BFF000D88AF7 /* PFTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BF03031EE4BFF000D88AF7 /* PFTextView.swift */; };
 		28D2E4BD1ECCD5D400FC98E2 /* OfferChoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D2E4BC1ECCD5D400FC98E2 /* OfferChoicesViewController.swift */; };
 		28D2E4BF1ECD389100FC98E2 /* SetLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D2E4BE1ECD389100FC98E2 /* SetLocationViewController.swift */; };
 		28D2E4C11ECD38B000FC98E2 /* TravelChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D2E4C01ECD38B000FC98E2 /* TravelChoiceViewController.swift */; };
@@ -81,6 +83,8 @@
 		28ADA74D1ED93AE600C8B3AB /* PostTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTitleViewController.swift; sourceTree = "<group>"; };
 		28ADA74F1ED9421B00C8B3AB /* DescribePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescribePostViewController.swift; sourceTree = "<group>"; };
 		28BC54E71EBFF6FD00A7E16E /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		28BF03011EE4BFE000D88AF7 /* PFTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFTextField.swift; sourceTree = "<group>"; };
+		28BF03031EE4BFF000D88AF7 /* PFTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFTextView.swift; sourceTree = "<group>"; };
 		28D2E4BC1ECCD5D400FC98E2 /* OfferChoicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferChoicesViewController.swift; sourceTree = "<group>"; };
 		28D2E4BE1ECD389100FC98E2 /* SetLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetLocationViewController.swift; sourceTree = "<group>"; };
 		28D2E4C01ECD38B000FC98E2 /* TravelChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelChoiceViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 				28BC54E71EBFF6FD00A7E16E /* CustomColors.swift */,
 				2887679A1EA425630052A76D /* PostTableViewCell.swift */,
 				28973A641EE26CD400CE9C04 /* ImageCollectionViewCell.swift */,
+				28BF03011EE4BFE000D88AF7 /* PFTextField.swift */,
+				28BF03031EE4BFF000D88AF7 /* PFTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -393,6 +399,7 @@
 				28BC54E81EBFF6FD00A7E16E /* CustomColors.swift in Sources */,
 				28ADA7501ED9421B00C8B3AB /* DescribePostViewController.swift in Sources */,
 				2890B0281EAAAB7D00886C82 /* User.swift in Sources */,
+				28BF03041EE4BFF000D88AF7 /* PFTextView.swift in Sources */,
 				28ADA74E1ED93AE600C8B3AB /* PostTitleViewController.swift in Sources */,
 				B2952AA21EC0031F00F060C1 /* CreateAccountViewController.swift in Sources */,
 				2890B0321EAAC43700886C82 /* IntroViewController.swift in Sources */,
@@ -403,6 +410,7 @@
 				28F4596B1EC87BEE0043B9BA /* UploadImageViewController.swift in Sources */,
 				28D2E4C51ECD38E600FC98E2 /* PreviewPostViewController.swift in Sources */,
 				B23C44181EC006F200950957 /* NameViewController.swift in Sources */,
+				28BF03021EE4BFE000D88AF7 /* PFTextField.swift in Sources */,
 				2887677C1EA41A880052A76D /* AppDelegate.swift in Sources */,
 				2890B02E1EAABAEF00886C82 /* SecondPageViewController.swift in Sources */,
 				288767911EA41DA90052A76D /* CommunitiesViewController.swift in Sources */,

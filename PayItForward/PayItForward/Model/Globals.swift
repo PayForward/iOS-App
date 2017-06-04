@@ -8,6 +8,8 @@
 
 import UIKit
 
+public let paddingConstant: CGFloat = 5
+
 /// Returns an alert view controller which you can present
 func createWarningAlert(withTitle title: String, message: String) -> UIViewController {
     let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -32,4 +34,17 @@ func scale(image: UIImage, toWidth width: CGFloat) -> UIImage? {
 enum AddressShareChoice {
     case Specific
     case General
+}
+
+extension UITextField {
+    
+    func pad(by amount: CGFloat) {
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: amount))
+        
+        self.leftView = paddingView
+        self.leftViewMode = .always
+        
+        self.rightView = paddingView
+        self.rightViewMode = .always
+    }
 }

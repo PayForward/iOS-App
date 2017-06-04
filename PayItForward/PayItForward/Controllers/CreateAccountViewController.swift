@@ -38,12 +38,6 @@ class CreateAccountViewController: UIViewController {
             //self.fetchProfile()
         }
         
-        // pad text view
-        let padding = 5
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: padding, height: 50))
-        
-        self.emailField.leftView = paddingView
-        self.passwordField.leftView = paddingView
     }
     
     @IBAction func createAccountWithEmailAndPassword(_ sender: Any) {
