@@ -45,11 +45,9 @@ class UploadImageViewController: UIViewController, UIImagePickerControllerDelega
         
         let photoLibAction = UIAlertAction(title: "Choose existing photo", style: .default) { _ in
             let pickerController = DKImagePickerController()
+            pickerController.singleSelect = true
             
             pickerController.didSelectAssets = { (assets: [DKAsset]) in
-                if assets.count > 1 {
-                    self.dismiss(animated: true, completion: nil)
-                }
                 
                 print("didSelectAssets")
                 print(assets)
@@ -108,7 +106,6 @@ class UploadImageViewController: UIViewController, UIImagePickerControllerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.imagePickerController.delegate = self
     }
 
 }

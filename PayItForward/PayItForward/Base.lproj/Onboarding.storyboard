@@ -1160,7 +1160,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="title" destination="HYR-ip-aqT" id="wDl-l2-osd"/>
-                                            <segue destination="6GG-Up-PCN" kind="show" id="sNb-mg-sZD"/>
+                                            <segue destination="SmQ-kc-r97" kind="show" id="QzP-ak-bET"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1179,9 +1179,6 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                                 <state key="normal" title="   Create your Own Offer">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="6GG-Up-PCN" kind="show" id="ebv-XC-rYT"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96875399350000002" green="0.96095770599999997" blue="0.95240873100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1204,7 +1201,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                     <navigationItem key="navigationItem" title="Title" id="B79-Xf-2PR">
                         <barButtonItem key="rightBarButtonItem" title="Skip" id="t5G-X3-cbC">
                             <connections>
-                                <segue destination="6GG-Up-PCN" kind="show" id="qPz-Ov-ASo"/>
+                                <segue destination="SmQ-kc-r97" kind="show" id="7Vg-Gd-51G"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1215,76 +1212,6 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iLa-yr-oiQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6880.8000000000002" y="-215.8920539730135"/>
-        </scene>
-        <!--Title-->
-        <scene sceneID="FVH-Be-4Mb">
-            <objects>
-                <viewController id="6GG-Up-PCN" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LvC-d4-4KR"/>
-                        <viewControllerLayoutGuide type="bottom" id="fg0-eM-Lei"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Dsx-HZ-6Ra">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.57894736790000001" translatesAutoresizingMaskIntoConstraints="NO" id="n1A-zf-R0k">
-                                <rect key="frame" x="16" y="72" width="343" height="2"/>
-                                <color key="progressTintColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="trackTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                            </progressView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JMD-By-2cx">
-                                <rect key="frame" x="0.0" y="140" width="375" height="1416"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Mui-KG-AQs">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mui-KG-AQs" id="c1Z-DN-m1l">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="SmQ-kc-r97" kind="show" id="5Ns-Fv-bgE"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a Category" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRy-R3-NUt">
-                                <rect key="frame" x="16" y="82" width="343" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="J5K-UV-b77"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.96875399350000002" green="0.96095770599999997" blue="0.95240873100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="iRy-R3-NUt" firstAttribute="centerX" secondItem="JMD-By-2cx" secondAttribute="centerX" id="LOX-EO-iWg"/>
-                            <constraint firstItem="n1A-zf-R0k" firstAttribute="trailing" secondItem="iRy-R3-NUt" secondAttribute="trailing" id="LTJ-eN-gL8"/>
-                            <constraint firstItem="n1A-zf-R0k" firstAttribute="top" secondItem="LvC-d4-4KR" secondAttribute="bottom" constant="8" symbolic="YES" id="R8p-S8-1HC"/>
-                            <constraint firstItem="JMD-By-2cx" firstAttribute="bottom" secondItem="fg0-eM-Lei" secondAttribute="top" id="RmH-nb-nTf"/>
-                            <constraint firstAttribute="trailing" secondItem="JMD-By-2cx" secondAttribute="trailing" id="TnQ-sf-3oe"/>
-                            <constraint firstItem="JMD-By-2cx" firstAttribute="top" secondItem="iRy-R3-NUt" secondAttribute="bottom" constant="8" symbolic="YES" id="XA7-g1-Iso"/>
-                            <constraint firstItem="JMD-By-2cx" firstAttribute="leading" secondItem="Dsx-HZ-6Ra" secondAttribute="leading" id="bSa-65-MA1"/>
-                            <constraint firstItem="n1A-zf-R0k" firstAttribute="leading" secondItem="iRy-R3-NUt" secondAttribute="leading" id="bec-u4-j9k"/>
-                            <constraint firstItem="iRy-R3-NUt" firstAttribute="top" secondItem="n1A-zf-R0k" secondAttribute="bottom" constant="8" symbolic="YES" id="fbI-bu-dFg"/>
-                            <constraint firstItem="n1A-zf-R0k" firstAttribute="leading" secondItem="Dsx-HZ-6Ra" secondAttribute="leadingMargin" id="jOP-0O-ljc"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Title" id="ssK-zv-KzE">
-                        <barButtonItem key="rightBarButtonItem" title="Skip" id="ILs-Z6-xS3">
-                            <connections>
-                                <segue destination="SmQ-kc-r97" kind="show" id="ecg-JH-xut"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zeA-eN-GlJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7648.8000000000002" y="-214.54272863568218"/>
         </scene>
         <!--Title-->
         <scene sceneID="6fR-Fx-yXL">
@@ -2391,20 +2318,19 @@ In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum fe
         <image name="UploadImage" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Vbd-sM-IK2"/>
-        <segue reference="Je1-sW-RVR"/>
-        <segue reference="d0J-us-zge"/>
-        <segue reference="QNI-Rl-XLT"/>
-        <segue reference="ecg-JH-xut"/>
-        <segue reference="sNb-mg-sZD"/>
-        <segue reference="vLx-S7-0x7"/>
-        <segue reference="m3R-hB-Zjo"/>
-        <segue reference="w7T-PL-jYw"/>
-        <segue reference="VlU-Ue-uZc"/>
-        <segue reference="xRu-oi-NDe"/>
         <segue reference="eRg-kz-Act"/>
         <segue reference="UYv-sk-fjK"/>
         <segue reference="bnM-Ep-feT"/>
+        <segue reference="xRu-oi-NDe"/>
+        <segue reference="VlU-Ue-uZc"/>
+        <segue reference="w7T-PL-jYw"/>
+        <segue reference="m3R-hB-Zjo"/>
+        <segue reference="vLx-S7-0x7"/>
+        <segue reference="QzP-ak-bET"/>
+        <segue reference="QNI-Rl-XLT"/>
+        <segue reference="d0J-us-zge"/>
+        <segue reference="Je1-sW-RVR"/>
+        <segue reference="Vbd-sM-IK2"/>
         <segue reference="z2q-iF-ZsH"/>
         <segue reference="o58-Yw-JfG"/>
         <segue reference="gjj-fv-AR3"/>
