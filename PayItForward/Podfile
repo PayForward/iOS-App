@@ -11,8 +11,15 @@ target 'PayItForward' do
   pod 'Firebase/Auth'
   pod 'Firebase/Crash'
   pod 'Firebase/Database'
+  
   pod 'FacebookLogin'
+  
   pod 'DKImagePickerController'
   pod 'DKCamera'
+  
   pod 'SwiftSpinner'
+  
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'GoogleMaps'
 end

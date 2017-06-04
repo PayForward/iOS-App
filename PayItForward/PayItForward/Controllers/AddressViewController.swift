@@ -12,7 +12,8 @@ import FirebaseDatabase
 
 class AddressViewController: UIViewController {
     
-    @IBOutlet weak var addressField: UITextField!
+    @IBOutlet weak var addressField: PFTextField!
+    
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var currentLocButton: UIButton!
     

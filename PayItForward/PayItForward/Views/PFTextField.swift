@@ -8,11 +8,24 @@
 
 import UIKit
 
-class PFTextField: UITextField {
+class PFTextField: UITextField, UITextFieldDelegate {
 
     override func draw(_ rect: CGRect) {
-        drawText(in: CGRect(5, 0, 40, 50))
-        self.backgroundColor = UIColor(red: 219, green: 237, blue: 239, alpha: 1.0)
-    }
+        let containerRect: CGRect = CGRect(x: 5, y: 0, width: 40, height: 50)
+        self.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1.0)
+        // Original colors: 219, 237, 239
+        // Changed for testing
 
+        self.textColor = UIColor(red: 74, green: 74, blue: 74, alpha: 1.0)
+        drawText(in: containerRect)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.resignFirstResponder()
+    }
 }

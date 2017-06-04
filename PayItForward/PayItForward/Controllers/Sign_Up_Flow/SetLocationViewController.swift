@@ -10,6 +10,7 @@ import UIKit
 
 class SetLocationViewController: UIViewController {
 
+    
     @IBOutlet weak var locationTextField: UITextField!
     var shareChoice: AddressShareChoice!
     
