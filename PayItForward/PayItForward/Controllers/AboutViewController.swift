@@ -9,34 +9,37 @@
 import UIKit
 
 class AboutViewController: UIViewController {
-
+    
     @IBOutlet weak var aboutTextView: UITextView!
+    
+    @IBOutlet weak var characterCountLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.aboutTextView.delegate = self
     }
 
     @IBAction func next(_ sender: UIButton) {
         User.shared.bio = self.aboutTextView.text
         performSegue(withIdentifier: "toPhoto", sender: nil)
     }
+
+}
+
+extension AboutViewController: UITextViewDelegate {
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func textViewDidChange(_ textView: UITextView) {
+        self.characterCountLabel.text = "\(self.aboutTextView.text.characters.count)/500"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        
+        let currentText = self.aboutTextView.text as NSString
+        
+        let newText = currentText.replacingCharacters(in: range, with: text)
+        
+        let numChars = newText.characters.count
+        
+        return numChars <= 500
     }
-    */
-
 }

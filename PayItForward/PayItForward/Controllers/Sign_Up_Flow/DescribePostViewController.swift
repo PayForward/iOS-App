@@ -12,30 +12,33 @@ class DescribePostViewController: UIViewController {
     
     var post: Post!
 
+    @IBOutlet weak var characterCountLabel: UILabel!
+    
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBAction func next(_ sender: Any) {
         
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.descriptionTextView.delegate = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+extension DescribePostViewController: UITextViewDelegate {
+    
+    func textViewDidChange(_ textView: UITextView) {
+        self.characterCountLabel.text = "\(self.descriptionTextView.text.characters.count)/500"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        
+        let currentText = self.descriptionTextView.text as NSString
+        
+        let newText = currentText.replacingCharacters(in: range, with: text)
+        
+        let numChars = newText.characters.count
+        
+        return numChars <= 500
     }
-    */
-
 }
