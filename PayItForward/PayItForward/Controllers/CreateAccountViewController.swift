@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
 import FacebookCore
 import FacebookLogin
@@ -15,13 +16,35 @@ class CreateAccountViewController: UIViewController {
 
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var fbView: UIView!
     
     let fbManager = LoginManager(loginBehavior: .systemAccount, defaultAudience: .everyone)
-    let loginButton = { () -> LoginButton in 
-        let button = LoginButton(readPermissions: [.email, .publicProfile])
+    let loginButton = { () -> LoginButton in
+        let button = LoginButton(readPermissions: [.email, .publicProfile, .userFriends])
         return button
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let loginButton = LoginButton(readPermissions: [.email, .publicProfile, .userFriends])
+        loginButton.center = fbView.center
+        loginButton.delegate = self
+        
+        view.addSubview(loginButton)
+        
+        if let token = AccessToken.current {
+            print("signed in")
+            //self.fetchProfile()
+        }
+        
+        // pad text view
+        let padding = 5
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: padding, height: 50))
+        
+        self.emailField.leftView = paddingView
+        self.passwordField.leftView = paddingView
+    }
     
     @IBAction func createAccountWithEmailAndPassword(_ sender: Any) {
         if emailIsValid() {
@@ -66,7 +89,7 @@ class CreateAccountViewController: UIViewController {
         
         FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
             if error != nil {
-                print(error)
+                print(error!.localizedDescription)
             }
             else {
                 print("user data below")
@@ -93,23 +116,6 @@ class CreateAccountViewController: UIViewController {
 //        }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.addSubview(self.loginButton())
-        
-        if let token = AccessToken.current {
-            print("signed in")
-            //self.fetchProfile()
-        }
-        
-        // pad text view
-        let padding = 5
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: padding, height: 50))
-        
-        self.emailField.leftView = paddingView
-        self.passwordField.leftView = paddingView
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -131,8 +137,39 @@ class CreateAccountViewController: UIViewController {
 
 extension CreateAccountViewController: LoginButtonDelegate {
     
+    func loginButtonWillLogin(_ loginButton: LoginButton!) -> Bool {
+        if let token = AccessToken.current {
+            let credential = FIRFacebookAuthProvider.credential(withAccessToken: token.authenticationToken)
+            FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+                if let error = error {
+                    print(error.localizedDescription)
+                    return
+                }
+                self.performSegue(withIdentifier: "toVerify", sender: self)
+            }
+            return false
+        }
+        return true
+    }
+    
     func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
         print("completed login")
+        switch result {
+            case .success(grantedPermissions: let _, declinedPermissions: let _, token: let token):
+                let credential = FIRFacebookAuthProvider.credential(withAccessToken: token.authenticationToken)
+                FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+                    if let error = error {
+                        print(error.localizedDescription)
+                        return
+                    }
+                    self.performSegue(withIdentifier: "toVerify", sender: self)
+                }
+        case .failed(let error):
+            print(error.localizedDescription)
+        case .cancelled:
+            print("cancelled")
+        }
+        
     }
     
     func loginButtonDidLogOut(_ loginButton: LoginButton) {

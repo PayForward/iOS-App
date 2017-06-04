@@ -166,12 +166,12 @@
 				28BC54E41EBFE50F00A7E16E /* Sign_Up_Flow */,
 				B25B16001EC8E83D006AFC1A /* AccountTableViewController.swift */,
 				288767901EA41DA90052A76D /* CommunitiesViewController.swift */,
-				2890B02B1EAABAE600886C82 /* FirstPageViewController.swift */,
 				2887678E1EA41D9C0052A76D /* HomeViewController.swift */,
 				2890B0311EAAC43700886C82 /* IntroViewController.swift */,
 				288767941EA41DC60052A76D /* MessagesViewController.swift */,
 				2890B0291EAABAB700886C82 /* PageContainerViewController.swift */,
 				288767921EA41DB20052A76D /* PostViewController.swift */,
+				2890B02B1EAABAE600886C82 /* FirstPageViewController.swift */,
 				2890B02D1EAABAEF00886C82 /* SecondPageViewController.swift */,
 				2890B02F1EAABAF900886C82 /* ThirdPageViewController.swift */,
 			);

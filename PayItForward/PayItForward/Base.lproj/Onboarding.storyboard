@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Tct-zq-tgc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Tct-zq-tgc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -531,7 +531,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxd-o9-JNF">
                                 <rect key="frame" x="49" y="91" width="292" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="K7H-Zn-gkl"/>
+                                    <constraint firstAttribute="height" constant="50" id="nh4-xs-k6r"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
                                 <nil key="textColor"/>
@@ -540,7 +540,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- or -" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5w-Jl-9DY">
                                 <rect key="frame" x="166" y="248" width="42" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="E7d-fa-dNJ"/>
+                                    <constraint firstAttribute="width" constant="42" id="CRK-0n-4es"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -550,7 +550,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                                 <rect key="frame" x="16" y="299" width="343" height="50"/>
                                 <color key="backgroundColor" red="0.85882352939999995" green="0.92941176469999998" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="kDb-nZ-6O3"/>
+                                    <constraint firstAttribute="height" constant="50" id="DBd-0x-OnW"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
@@ -560,7 +560,7 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                                 <rect key="frame" x="16" y="357" width="343" height="50"/>
                                 <color key="backgroundColor" red="0.85882352939999995" green="0.92941176469999998" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="oc1-JY-lsD"/>
+                                    <constraint firstAttribute="height" constant="50" id="cBU-Tr-QvQ"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
@@ -569,45 +569,39 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjN-io-PIq">
                                 <rect key="frame" x="304" y="1527" width="46" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="Cnn-af-WiF"/>
+                                    <constraint firstAttribute="width" constant="46" id="ASZ-Qv-ghP"/>
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="createAccountWithEmailAndPassword:" destination="z3W-wc-jUQ" eventType="touchUpInside" id="Uvr-XN-tAh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDX-nq-wKj">
-                                <rect key="frame" x="16" y="168" width="343" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="d10-2T-xN3"/>
-                                </constraints>
-                                <state key="normal" image="ContinueWithFacebook"/>
-                                <connections>
-                                    <action selector="continueWithFB:" destination="z3W-wc-jUQ" eventType="touchUpInside" id="gjw-6M-Sgs"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcb-AX-3XU">
+                                <rect key="frame" x="0.0" y="173" width="375" height="44"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zxd-o9-JNF" firstAttribute="top" secondItem="h8M-WO-jZ7" secondAttribute="bottom" constant="17" id="4M5-Kw-BEc"/>
-                            <constraint firstItem="h8M-WO-jZ7" firstAttribute="trailing" secondItem="ez1-lI-OdN" secondAttribute="trailingMargin" id="5eb-y0-aeo"/>
-                            <constraint firstItem="h8M-WO-jZ7" firstAttribute="trailing" secondItem="JDX-nq-wKj" secondAttribute="trailing" id="6k1-v5-c6v"/>
-                            <constraint firstItem="SYJ-Hj-doL" firstAttribute="top" secondItem="Z11-qj-G0w" secondAttribute="bottom" constant="8" symbolic="YES" id="6uU-rY-glB"/>
-                            <constraint firstItem="Z11-qj-G0w" firstAttribute="top" secondItem="p5w-Jl-9DY" secondAttribute="bottom" constant="30" id="8GT-16-kl1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gjN-io-PIq" secondAttribute="trailing" constant="9" id="8XV-rE-DbB"/>
-                            <constraint firstItem="z36-Lh-HZJ" firstAttribute="top" secondItem="gjN-io-PIq" secondAttribute="bottom" constant="43" id="G4j-Zt-Phl"/>
-                            <constraint firstItem="JDX-nq-wKj" firstAttribute="leading" secondItem="Z11-qj-G0w" secondAttribute="leading" id="H9u-e5-DoD"/>
-                            <constraint firstItem="h8M-WO-jZ7" firstAttribute="leading" secondItem="ez1-lI-OdN" secondAttribute="leadingMargin" id="JPw-31-omP"/>
-                            <constraint firstItem="JDX-nq-wKj" firstAttribute="top" secondItem="zxd-o9-JNF" secondAttribute="bottom" constant="27" id="MUw-zC-Egv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zxd-o9-JNF" secondAttribute="trailing" constant="18" id="PKk-UI-SWY"/>
-                            <constraint firstItem="Z11-qj-G0w" firstAttribute="trailing" secondItem="SYJ-Hj-doL" secondAttribute="trailing" id="cmt-5W-a5C"/>
-                            <constraint firstItem="zxd-o9-JNF" firstAttribute="leading" secondItem="ez1-lI-OdN" secondAttribute="leadingMargin" constant="33" id="fBS-xl-zVr"/>
-                            <constraint firstItem="h8M-WO-jZ7" firstAttribute="top" secondItem="WyM-CP-Trz" secondAttribute="bottom" constant="8" symbolic="YES" id="iYE-zs-KEu"/>
-                            <constraint firstItem="Z11-qj-G0w" firstAttribute="leading" secondItem="SYJ-Hj-doL" secondAttribute="leading" id="jS5-gA-tN8"/>
-                            <constraint firstItem="h8M-WO-jZ7" firstAttribute="leading" secondItem="JDX-nq-wKj" secondAttribute="leading" id="jsH-9a-aAf"/>
-                            <constraint firstItem="JDX-nq-wKj" firstAttribute="centerX" secondItem="p5w-Jl-9DY" secondAttribute="centerX" id="jtv-XW-nmT"/>
-                            <constraint firstItem="p5w-Jl-9DY" firstAttribute="top" secondItem="JDX-nq-wKj" secondAttribute="bottom" constant="30" id="oBZ-dn-Gtl"/>
-                            <constraint firstItem="JDX-nq-wKj" firstAttribute="trailing" secondItem="Z11-qj-G0w" secondAttribute="trailing" id="zmn-u6-cpu"/>
+                            <constraint firstItem="p5w-Jl-9DY" firstAttribute="centerX" secondItem="Z11-qj-G0w" secondAttribute="centerX" id="3OB-h5-az6"/>
+                            <constraint firstItem="SYJ-Hj-doL" firstAttribute="top" secondItem="Z11-qj-G0w" secondAttribute="bottom" constant="8" symbolic="YES" id="3Wb-TA-qqy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gjN-io-PIq" secondAttribute="trailing" constant="9" id="3Xf-qY-BUT"/>
+                            <constraint firstItem="Z11-qj-G0w" firstAttribute="top" secondItem="p5w-Jl-9DY" secondAttribute="bottom" constant="30" id="3od-qO-Ke9"/>
+                            <constraint firstItem="h8M-WO-jZ7" firstAttribute="leading" secondItem="ez1-lI-OdN" secondAttribute="leadingMargin" id="4w2-V4-hMD"/>
+                            <constraint firstItem="h8M-WO-jZ7" firstAttribute="top" secondItem="WyM-CP-Trz" secondAttribute="bottom" constant="8" symbolic="YES" id="8cb-WZ-rHK"/>
+                            <constraint firstItem="zcb-AX-3XU" firstAttribute="leading" secondItem="ez1-lI-OdN" secondAttribute="leading" id="E7H-9J-DlX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zxd-o9-JNF" secondAttribute="trailing" constant="18" id="Fyq-vN-ceA"/>
+                            <constraint firstItem="zxd-o9-JNF" firstAttribute="top" secondItem="h8M-WO-jZ7" secondAttribute="bottom" constant="17" id="e2E-zK-NEo"/>
+                            <constraint firstItem="zcb-AX-3XU" firstAttribute="top" secondItem="zxd-o9-JNF" secondAttribute="bottom" constant="32" id="fTm-3D-18r"/>
+                            <constraint firstItem="p5w-Jl-9DY" firstAttribute="top" secondItem="zcb-AX-3XU" secondAttribute="bottom" constant="31" id="gQ4-dl-tYd"/>
+                            <constraint firstAttribute="trailing" secondItem="zcb-AX-3XU" secondAttribute="trailing" id="hBO-Es-5on"/>
+                            <constraint firstItem="Z11-qj-G0w" firstAttribute="trailing" secondItem="SYJ-Hj-doL" secondAttribute="trailing" id="hGO-zB-2YH"/>
+                            <constraint firstItem="h8M-WO-jZ7" firstAttribute="trailing" secondItem="Z11-qj-G0w" secondAttribute="trailing" id="htF-j4-Axu"/>
+                            <constraint firstItem="h8M-WO-jZ7" firstAttribute="leading" secondItem="Z11-qj-G0w" secondAttribute="leading" id="iLh-Ef-gfB"/>
+                            <constraint firstItem="Z11-qj-G0w" firstAttribute="leading" secondItem="SYJ-Hj-doL" secondAttribute="leading" id="jdH-X4-XMu"/>
+                            <constraint firstItem="zcb-AX-3XU" firstAttribute="centerX" secondItem="p5w-Jl-9DY" secondAttribute="centerX" id="msl-kT-tF9"/>
+                            <constraint firstItem="zxd-o9-JNF" firstAttribute="leading" secondItem="ez1-lI-OdN" secondAttribute="leadingMargin" constant="33" id="o2s-8M-i61"/>
+                            <constraint firstItem="p5w-Jl-9DY" firstAttribute="top" secondItem="ez1-lI-OdN" secondAttribute="top" constant="248" id="u3R-mT-Xkb"/>
+                            <constraint firstItem="z36-Lh-HZJ" firstAttribute="top" secondItem="gjN-io-PIq" secondAttribute="bottom" constant="43" id="z2v-yC-Lyz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Dy4-Vf-dov">
@@ -625,13 +619,14 @@ In summary: Treat others as you would like to be treated. We are setting up a sy
                     </navigationItem>
                     <connections>
                         <outlet property="emailField" destination="Z11-qj-G0w" id="7Lf-XN-xrs"/>
+                        <outlet property="fbView" destination="zcb-AX-3XU" id="cnl-aV-8yt"/>
                         <outlet property="passwordField" destination="SYJ-Hj-doL" id="2Ag-hB-oGZ"/>
                         <segue destination="VGl-6e-zKA" kind="show" identifier="toVerify" id="Fsc-AV-YVu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaY-pJ-Tjq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2168.8000000000002" y="-214.54272863568218"/>
+            <point key="canvasLocation" x="2168.8000000000002" y="-214.99250374812596"/>
         </scene>
         <!--loginVC-->
         <scene sceneID="Auw-Q7-mQ2">
@@ -2343,7 +2338,6 @@ In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum fe
     </scenes>
     <resources>
         <image name="CalPolyCommunity" width="82" height="60"/>
-        <image name="ContinueWithFacebook" width="494" height="80"/>
         <image name="SLOCommunity" width="93" height="69"/>
         <image name="UploadImage" width="50" height="50"/>
     </resources>
