@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
 import FacebookCore
 import FacebookLogin
@@ -28,8 +29,9 @@ class CreateAccountViewController: UIViewController {
         
         let loginButton = LoginButton(readPermissions: [.email, .publicProfile, .userFriends])
         loginButton.center = fbView.center
+        loginButton.delegate = self
         
-        fbView.addSubview(loginButton)
+        view.addSubview(loginButton)
         
         if let token = AccessToken.current {
             print("signed in")
@@ -135,8 +137,39 @@ class CreateAccountViewController: UIViewController {
 
 extension CreateAccountViewController: LoginButtonDelegate {
     
+    func loginButtonWillLogin(_ loginButton: LoginButton!) -> Bool {
+        if let token = AccessToken.current {
+            let credential = FIRFacebookAuthProvider.credential(withAccessToken: token.authenticationToken)
+            FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+                if let error = error {
+                    print(error.localizedDescription)
+                    return
+                }
+                self.performSegue(withIdentifier: "toVerify", sender: self)
+            }
+            return false
+        }
+        return true
+    }
+    
     func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
         print("completed login")
+        switch result {
+            case .success(grantedPermissions: let _, declinedPermissions: let _, token: let token):
+                let credential = FIRFacebookAuthProvider.credential(withAccessToken: token.authenticationToken)
+                FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+                    if let error = error {
+                        print(error.localizedDescription)
+                        return
+                    }
+                    self.performSegue(withIdentifier: "toVerify", sender: self)
+                }
+        case .failed(let error):
+            print(error.localizedDescription)
+        case .cancelled:
+            print("cancelled")
+        }
+        
     }
     
     func loginButtonDidLogOut(_ loginButton: LoginButton) {
