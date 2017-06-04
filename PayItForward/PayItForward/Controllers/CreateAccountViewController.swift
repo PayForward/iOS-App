@@ -15,13 +15,34 @@ class CreateAccountViewController: UIViewController {
 
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var fbView: UIView!
     
     let fbManager = LoginManager(loginBehavior: .systemAccount, defaultAudience: .everyone)
-    let loginButton = { () -> LoginButton in 
-        let button = LoginButton(readPermissions: [.email, .publicProfile])
+    let loginButton = { () -> LoginButton in
+        let button = LoginButton(readPermissions: [.email, .publicProfile, .userFriends])
         return button
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let loginButton = LoginButton(readPermissions: [.email, .publicProfile, .userFriends])
+        loginButton.center = fbView.center
+        
+        fbView.addSubview(loginButton)
+        
+        if let token = AccessToken.current {
+            print("signed in")
+            //self.fetchProfile()
+        }
+        
+        // pad text view
+        let padding = 5
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: padding, height: 50))
+        
+        self.emailField.leftView = paddingView
+        self.passwordField.leftView = paddingView
+    }
     
     @IBAction func createAccountWithEmailAndPassword(_ sender: Any) {
         if emailIsValid() {
@@ -66,7 +87,7 @@ class CreateAccountViewController: UIViewController {
         
         FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
             if error != nil {
-                print(error)
+                print(error!.localizedDescription)
             }
             else {
                 print("user data below")
@@ -93,23 +114,6 @@ class CreateAccountViewController: UIViewController {
 //        }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.addSubview(self.loginButton())
-        
-        if let token = AccessToken.current {
-            print("signed in")
-            //self.fetchProfile()
-        }
-        
-        // pad text view
-        let padding = 5
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: padding, height: 50))
-        
-        self.emailField.leftView = paddingView
-        self.passwordField.leftView = paddingView
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
