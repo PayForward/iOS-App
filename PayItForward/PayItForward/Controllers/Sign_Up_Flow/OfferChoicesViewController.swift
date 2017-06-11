@@ -12,17 +12,17 @@ import Firebase
 class OfferChoicesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var ref: FIRDatabaseReference!
+    var ref: DatabaseReference!
     var offerings = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ref = FIRDatabase.database().reference()
+        ref = Database.database().reference()
         ref.child("offerings").observe(.value, with: { [weak self] snapshot in
             guard let strongSelf = self else { return }
             for child in snapshot.children {
-                let childSnapshot = child as! FIRDataSnapshot
+                let childSnapshot = child as! DataSnapshot
                 let title = childSnapshot.value as! String
                 strongSelf.offerings.append(title)
             }

@@ -33,7 +33,7 @@ class CreateAccountViewController: UIViewController {
         
         view.addSubview(loginButton)
         
-        if let token = AccessToken.current {
+        if let _ = AccessToken.current {
             print("signed in")
             //self.fetchProfile()
         }
@@ -81,13 +81,13 @@ class CreateAccountViewController: UIViewController {
     func register(withEmail email: String, password: String) {
         print("registering")
         
-        FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
+        Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
             if error != nil {
                 print(error!.localizedDescription)
             }
             else {
                 print("user data below")
-                print(user)
+                print(user ?? "User data returned nil")
             }
             
             User.shared.email = email
@@ -133,8 +133,8 @@ extension CreateAccountViewController: LoginButtonDelegate {
     
     func loginButtonWillLogin(_ loginButton: LoginButton!) -> Bool {
         if let token = AccessToken.current {
-            let credential = FIRFacebookAuthProvider.credential(withAccessToken: token.authenticationToken)
-            FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+            let credential = FacebookAuthProvider.credential(withAccessToken: token.authenticationToken)
+            Auth.auth().signIn(with: credential) { (user, error) in
                 if let error = error {
                     print(error.localizedDescription)
                     return
@@ -150,8 +150,8 @@ extension CreateAccountViewController: LoginButtonDelegate {
         print("completed login")
         switch result {
             case .success(grantedPermissions: let _, declinedPermissions: let _, token: let token):
-                let credential = FIRFacebookAuthProvider.credential(withAccessToken: token.authenticationToken)
-                FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+                let credential = FacebookAuthProvider.credential(withAccessToken: token.authenticationToken)
+                Auth.auth().signIn(with: credential) { (user, error) in
                     if let error = error {
                         print(error.localizedDescription)
                         return

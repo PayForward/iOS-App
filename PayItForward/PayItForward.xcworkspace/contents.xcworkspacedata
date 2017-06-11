@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:calpoly.gpx">
+   </FileRef>
+   <FileRef
       location = "group:PayItForward.xcodeproj">
    </FileRef>
    <FileRef

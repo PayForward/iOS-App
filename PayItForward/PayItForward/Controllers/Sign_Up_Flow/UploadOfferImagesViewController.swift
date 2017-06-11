@@ -49,17 +49,17 @@ class UploadOfferImagesViewController: UIViewController, UICollectionViewDataSou
         SwiftSpinner.show("Starting photo upload.")
         
         let storagePath = "\(User.shared.uid)_\(User.shared.firstName)_\(User.shared.lastName)"
-        let storageRef = FIRStorage.storage().reference(withPath: storagePath)
+        let storageRef = Storage.storage().reference(withPath: storagePath)
         
         for i in 0..<self.chosenImages.count {
             let picture = UIImagePNGRepresentation(chosenImages[i])!
             
-            storageRef.put(picture, metadata: nil) { (metadata, error) in
+            storageRef.putData(picture, metadata: nil) { (metadata, error) in
                 if error != nil {
-                    print(error)
+                    print(error!)
                 }
                 else {
-                    print(metadata)
+                    print(metadata ?? "Metadata returned nil")
                     
                     let percentDone = Double(i / self.chosenImages.count)
                     SwiftSpinner.show(progress: percentDone, title: "Uploading photo \(i + 1) of \(self.chosenImages.count)")

@@ -82,20 +82,20 @@ class UploadImageViewController: UIViewController, UIImagePickerControllerDelega
     
     func storeInFirebase(_ image: UIImage) {
         let scaledImage = scale(image: self.chosenImage, toWidth: 50)!
-        let prefix = "\(User.shared.firstName)\(User.shared.lastName)"
+        let prefix = "\(User.shared.uid)_\(User.shared.firstName)_\(User.shared.lastName)"
         
         // store media in folders labelled by uid_firstName_lastName
         
-        let storageRef = FIRStorage.storage().reference().child("\(User.shared.uid)_\(User.shared.firstName)_\(User.shared.lastName)").child("propic.png")
+        let storageRef = Storage.storage().reference().child(prefix).child("propic.png")
         
         if let uploadData = UIImagePNGRepresentation(scaledImage) {
-            storageRef.put(uploadData, metadata: nil) { (metadata, error) in
+            storageRef.putData(uploadData, metadata: nil) { (metadata, error) in
                 if error != nil {
-                    print(error)
+                    print(error!)
                 }
                     
                 else {
-                    print("Completed! \nMetadata: \(metadata)")
+                    print("Completed! \nMetadata: \(String(describing: metadata))")
                     
                     self.performSegue(withIdentifier: "toTitle", sender: self)
                 }

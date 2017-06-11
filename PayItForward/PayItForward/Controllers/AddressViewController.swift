@@ -24,7 +24,7 @@ class AddressViewController: UIViewController {
     
     var usedLocationFinder = false
     
-    var sloZipCodes = ["93401", "93403", "93405", "93406", "93408", "93410"]
+    var sloZipCodes = ["93401", "93403", "93405", "93406", "93407", "93408", "93410"]
     var userZipCode: String!
     
     override func viewDidLoad() {
@@ -90,38 +90,27 @@ class AddressViewController: UIViewController {
     // TODO: this doesn't work right either :/
     /// Checks if zip code is within SLO
     func zipCodeIsValid() -> Bool {
-        var currentZip = ""
+//        var currentZip = ""
+//        
+//        if let components = self.currentPlace?.addressComponents {
+//            for field in components {
+//                print("current field is \(field.name)")
+//                
+//                // TODO: why is the field blank
+//                if field.type == kGMSPlaceTypePostalCode {
+//                    print("current zip code is \(currentZip)")
+//                    currentZip = field.type
+//                }
+//            }
+//        }
+//        
+//        for zip in sloZipCodes {
+//            if currentZip == zip {
+//                return true
+//            }
+//        }
         
-        if let components = self.currentPlace?.addressComponents {
-            for field in components {
-                if field.type == kGMSPlaceTypePostalCode {
-                    currentZip = field.type
-                }
-            }
-        }
-        
-        for zip in sloZipCodes {
-            if currentZip == zip {
-                return true
-            }
-        }
-        
-        return false
-    }
-    
-    // TODO: THIS DOESN'T WORK YET :(
-    /// User inputs their addresss
-    func getLocation(from address: String) {
-        CLGeocoder().geocodeAddressString(address) { (placemarks, error) in
-            guard error != nil && (placemarks?.count)! > 0 else {
-                print(error!)
-                return
-            }
-            
-            let placemark = (placemarks?.first)!
-            self.userZipCode = placemark.postalCode!
-            self.currentPlace = placemark.location!
-        }
+        return true
     }
 }
 

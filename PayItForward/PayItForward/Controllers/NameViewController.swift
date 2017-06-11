@@ -26,6 +26,7 @@ class NameViewController: UIViewController {
         }
         else {
             let warningVC = createWarningAlert(withTitle: "Names cannot be empty", message: "One or more of the name fields are empty.")
+            self.present(warningVC, animated: true, completion: nil)
         }
     }
     
